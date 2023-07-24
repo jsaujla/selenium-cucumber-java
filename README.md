@@ -5,7 +5,15 @@
 * The website under test is 'buggy.justtestit'
 * There are 5 test scenarios automated. Few test scenarios execute with different set of test data, which makes the total test count 15
 
+### GitHub Actions (CI) test execution result ###
 [![Selenium Cucumber Java CI with Maven](https://github.com/jsaujla/selenium-cucumber-java/actions/workflows/maven.yml/badge.svg)](https://github.com/jsaujla/selenium-cucumber-java/actions/workflows/maven.yml)
+
+* Access cucumber result report online  
+  https://jsaujla.github.io/selenium-cucumber-java/cucumber-reports.html
+* Access execution logs online  
+  https://jsaujla.github.io/selenium-cucumber-java/log/testlog.html
+
+## Local setup ##
 
 ### Prerequisite for execution ###
 * Java 11 or higher installed
