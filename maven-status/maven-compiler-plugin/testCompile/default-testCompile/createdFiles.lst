@@ -1,0 +1,13 @@
+org/justtestit/buggy/pages/DashboardPage.class
+org/justtestit/buggy/pages/ProfilePage.class
+org/justtestit/buggy/steps/RegisterSteps.class
+org/justtestit/buggy/runner/TestNgRunner.class
+org/justtestit/buggy/runner/TestNgParallelRunner.class
+org/justtestit/buggy/steps/LoginSteps.class
+org/justtestit/buggy/runner/JUnitRunner.class
+org/justtestit/buggy/constant/Constants.class
+org/justtestit/buggy/steps/PageInitializer.class
+org/justtestit/buggy/steps/Hooks.class
+org/justtestit/buggy/pages/HomePage.class
+org/justtestit/buggy/pages/RegisterPage.class
+org/justtestit/buggy/steps/DependencyContainer.class
