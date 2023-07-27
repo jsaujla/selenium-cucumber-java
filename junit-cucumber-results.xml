@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="66.695" tests="15" skipped="0" failures="0" errors="0">
-<testcase classname="User Login" name="Verify valid login" time="7.981">
+<testsuite name="Cucumber" time="64.61" tests="15" skipped="0" failures="0" errors="0">
+<testcase classname="User Login" name="Verify valid login" time="15.162">
 <system-out><![CDATA[
 Given I am at Buggy login page..............................................passed
 When I login Buggy with user: "test.user" and password: "Password1!"........passed
@@ -8,7 +8,7 @@ Then I should reach to user dashboard.......................................pass
 And I should see the relevant user first name: "Ricky"......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User Login" name="Verify logout" time="5.39">
+<testcase classname="User Login" name="Verify logout" time="4.04">
 <system-out><![CDATA[
 Given I am at Buggy login page..............................................passed
 When I login Buggy with user: "test.user" and password: "Password1!"........passed
@@ -18,7 +18,7 @@ When I click on Logout......................................................pass
 Then I should logged out successfully.......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User Login" name="Verify invalid login - Example #1.1" time="3.127">
+<testcase classname="User Login" name="Verify invalid login - Example #1.1" time="2.863">
 <system-out><![CDATA[
 Given I am at Buggy login page..............................................passed
 When I login Buggy with user: "invaliduser" and password: "invalidpassword".passed
@@ -26,7 +26,7 @@ Then I should see error message: "Invalid username/password"................pass
 And I am still on Home page.................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User Login" name="Verify invalid login - Example #1.2" time="3.12">
+<testcase classname="User Login" name="Verify invalid login - Example #1.2" time="2.818">
 <system-out><![CDATA[
 Given I am at Buggy login page..............................................passed
 When I login Buggy with user: "test.user" and password: "invalidpassword"...passed
@@ -34,7 +34,7 @@ Then I should see error message: "Invalid username/password"................pass
 And I am still on Home page.................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User Login" name="Verify invalid login - Example #1.3" time="3.083">
+<testcase classname="User Login" name="Verify invalid login - Example #1.3" time="2.781">
 <system-out><![CDATA[
 Given I am at Buggy login page..............................................passed
 When I login Buggy with user: "test.user" and password: ""..................passed
@@ -42,7 +42,7 @@ Then I should see error message: "Please fill out this field."..............pass
 And I am still on Home page.................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User Login" name="Verify invalid login - Example #1.4" time="3.124">
+<testcase classname="User Login" name="Verify invalid login - Example #1.4" time="2.862">
 <system-out><![CDATA[
 Given I am at Buggy login page..............................................passed
 When I login Buggy with user: "invaliduser" and password: "Password1!"......passed
@@ -50,7 +50,7 @@ Then I should see error message: "Invalid username/password"................pass
 And I am still on Home page.................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User Login" name="Verify invalid login - Example #1.5" time="3.074">
+<testcase classname="User Login" name="Verify invalid login - Example #1.5" time="2.912">
 <system-out><![CDATA[
 Given I am at Buggy login page..............................................passed
 When I login Buggy with user: "" and password: "Password1!".................passed
@@ -58,7 +58,7 @@ Then I should see error message: "Please fill out this field."..............pass
 And I am still on Home page.................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User Login" name="Verify invalid login - Example #1.6" time="3.082">
+<testcase classname="User Login" name="Verify invalid login - Example #1.6" time="2.292">
 <system-out><![CDATA[
 Given I am at Buggy login page..............................................passed
 When I login Buggy with user: "" and password: ""...........................passed
@@ -66,7 +66,7 @@ Then I should see error message: "Please fill out this field."..............pass
 And I am still on Home page.................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User Registration" name="Verify valid registration - Example #1.1" time="10.415">
+<testcase classname="User Registration" name="Verify valid registration - Example #1.1" time="8.362">
 <system-out><![CDATA[
 Given I am at Buggy register page...........................................passed
 When I register with valid data.............................................passed
@@ -76,42 +76,42 @@ And I should see the relevant user first name: "John".......................pass
 And I should see the valid user info under user profile page................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User Registration" name="Verify registration with existing user - Example #1.1" time="3.916">
+<testcase classname="User Registration" name="Verify registration with existing user - Example #1.1" time="3.515">
 <system-out><![CDATA[
 Given I am at Buggy register page...........................................passed
 When I try to register with existing user...................................passed
 Then I should see the error message: "User already exists"..................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User Registration" name="Verify registration with existing user - Example #1.2" time="3.833">
+<testcase classname="User Registration" name="Verify registration with existing user - Example #1.2" time="3.61">
 <system-out><![CDATA[
 Given I am at Buggy register page...........................................passed
 When I try to register with existing user...................................passed
 Then I should see the error message: "User already exists"..................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User Registration" name="Verify registration with existing user - Example #1.3" time="4.356">
+<testcase classname="User Registration" name="Verify registration with existing user - Example #1.3" time="3.038">
 <system-out><![CDATA[
 Given I am at Buggy register page...........................................passed
 When I try to register with existing user...................................passed
 Then I should see the error message: "User already exists"..................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User Registration" name="Verify registration with existing user - Example #1.4" time="4.315">
+<testcase classname="User Registration" name="Verify registration with existing user - Example #1.4" time="3.523">
 <system-out><![CDATA[
 Given I am at Buggy register page...........................................passed
 When I try to register with existing user...................................passed
 Then I should see the error message: "User already exists"..................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User Registration" name="Verify registration with existing user - Example #1.5" time="3.764">
+<testcase classname="User Registration" name="Verify registration with existing user - Example #1.5" time="3.473">
 <system-out><![CDATA[
 Given I am at Buggy register page...........................................passed
 When I try to register with existing user...................................passed
 Then I should see the error message: "User already exists"..................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User Registration" name="Verify registration with existing user - Example #1.6" time="3.825">
+<testcase classname="User Registration" name="Verify registration with existing user - Example #1.6" time="3.046">
 <system-out><![CDATA[
 Given I am at Buggy register page...........................................passed
 When I try to register with existing user...................................passed
