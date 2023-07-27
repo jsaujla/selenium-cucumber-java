@@ -6,9 +6,9 @@
 * There are 5 test scenarios automated. Few test scenarios execute with different set of test data, which makes the total test count 15
 
 ### GitHub Actions (CI) test execution result ###
-[![Selenium Cucumber Java CI with Maven | Google Chrome](https://github.com/jsaujla/selenium-cucumber-java/actions/workflows/maven-chrome.yml/badge.svg)](https://github.com/jsaujla/selenium-cucumber-java/actions/workflows/maven-chrome.yml)  
-[![Selenium Cucumber Java CI with Maven | Microsoft Edge](https://github.com/jsaujla/selenium-cucumber-java/actions/workflows/maven-edge.yml/badge.svg)](https://github.com/jsaujla/selenium-cucumber-java/actions/workflows/maven-edge.yml)  
-[![Selenium Cucumber Java CI with Maven | Mozilla Firefox](https://github.com/jsaujla/selenium-cucumber-java/actions/workflows/maven-firefox.yml/badge.svg)](https://github.com/jsaujla/selenium-cucumber-java/actions/workflows/maven-firefox.yml)  
+[![Selenium Cucumber Java CI with Maven | Google Chrome](https://github.com/jsaujla/selenium-cucumber-java/actions/workflows/maven-chrome.yml/badge.svg)](https://github.com/jsaujla/selenium-cucumber-java/actions/workflows/maven-chrome.yml)
+[![Selenium Cucumber Java CI with Maven | Microsoft Edge](https://github.com/jsaujla/selenium-cucumber-java/actions/workflows/maven-edge.yml/badge.svg)](https://github.com/jsaujla/selenium-cucumber-java/actions/workflows/maven-edge.yml)
+[![Selenium Cucumber Java CI with Maven | Mozilla Firefox](https://github.com/jsaujla/selenium-cucumber-java/actions/workflows/maven-firefox.yml/badge.svg)](https://github.com/jsaujla/selenium-cucumber-java/actions/workflows/maven-firefox.yml)
 
 * Access cucumber result report online  
   https://jsaujla.github.io/selenium-cucumber-java/cucumber-reports.html
