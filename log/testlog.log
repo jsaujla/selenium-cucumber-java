@@ -1,686 +1,686 @@
-2023-07-27 06:53:20,281 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX START TEST SCENARIO XXXXXXXXXX
-2023-07-27 06:53:20,283 - org.justtestit.buggy.steps.Hooks -INFO - Scenario: Verify valid login
-2023-07-27 06:53:20,285 - commons.properties.PropertiesManager -INFO - Constructing PropertiesManager with file path: '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties'
-2023-07-27 06:53:20,285 - commons.properties.PropertiesManager -INFO - Loading properties file
-2023-07-27 06:53:20,286 - commons.properties.PropertiesManager -INFO - Properties file '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties' loaded successfully
-2023-07-27 06:53:20,287 - commons.web.WebDriverManager -INFO - Constructing WebDriverManager with the specified properties manager
-2023-07-27 06:53:20,287 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.wait' as int
-2023-07-27 06:53:20,289 - commons.web.WebDriverManager -INFO - Constructing WebDriverInitializer with the specified properties manager
-2023-07-27 06:53:20,290 - commons.web.WebDriverManager -INFO - Initializing WebDriver
-2023-07-27 06:53:20,290 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.browser.name' as string
-2023-07-27 06:53:20,290 - commons.properties.PropertiesManager -INFO - Returning Property of 'headless' as string
-2023-07-27 06:53:20,290 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.manager' as boolean
-2023-07-27 06:53:22,699 - io.github.bonigarcia.wdm.online.HttpClient -ERROR - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115
-2023-07-27 06:53:22,700 - io.github.bonigarcia.wdm.versions.VersionDetector -WARN - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115)
-2023-07-27 06:53:22,735 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Reading https://chromedriver.storage.googleapis.com/ to seek chromedriver
-2023-07-27 06:53:23,245 - io.github.bonigarcia.wdm.online.Downloader -INFO - Downloading https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
-2023-07-27 06:53:23,476 - io.github.bonigarcia.wdm.online.Downloader -INFO - Extracting driver from compressed file chromedriver_linux64.zip
-2023-07-27 06:53:23,595 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
-2023-07-27 06:53:31,369 - commons.web.WebDriverManager -INFO - Web browser 'chrome' launched successfully
-2023-07-27 06:53:31,370 - commons.properties.PropertiesManager -INFO - Returning Property of 'windows.maximize' as boolean
-2023-07-27 06:53:31,370 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:53:31,489 - org.justtestit.buggy.steps.Hooks -INFO - Browser windows maximized successfully
-2023-07-27 06:53:31,489 - commons.properties.PropertiesManager -INFO - Returning Property of 'implicitly.wait' as int
-2023-07-27 06:53:31,489 - org.justtestit.buggy.steps.Hooks -INFO - Implicit wait not implemented
-2023-07-27 06:53:31,490 - commons.properties.PropertiesManager -INFO - Returning Property of 'page.load.timeout' as int
-2023-07-27 06:53:31,490 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:53:31,495 - org.justtestit.buggy.steps.Hooks -INFO - Page load timeout '60 second(s)' implemented successfully
-2023-07-27 06:53:31,497 - org.justtestit.buggy.steps.LoginSteps -INFO - Given I am at Buggy login page
-2023-07-27 06:53:31,498 - commons.properties.PropertiesManager -INFO - Returning Property of 'base.url' as string
-2023-07-27 06:53:31,498 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:53:33,051 - org.justtestit.buggy.steps.LoginSteps -INFO - When I login Buggy with user: {string} and password: {string}
-2023-07-27 06:53:33,052 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:33,191 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: login
-2023-07-27 06:53:33,407 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:33,459 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: password
-2023-07-27 06:53:33,543 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:33,581 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.cssSelector: button[type='submit']
-2023-07-27 06:53:33,652 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I should reach to user dashboard
-2023-07-27 06:53:33,652 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I should see the relevant user first name: {string}
-2023-07-27 06:53:33,652 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:36,301 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.xpath: //*[contains(text(),'Ricky')]
-2023-07-27 06:53:36,326 - org.justtestit.buggy.steps.Hooks -INFO - Skipped capturing screenshot, because webDriverManager is null
-2023-07-27 06:53:36,327 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:53:36,442 - org.justtestit.buggy.steps.Hooks -INFO - Closed web browser window(s) and ended the WebDriver session
-2023-07-27 06:53:36,442 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX END TEST SCENARIO XXXXXXXXXX
-2023-07-27 06:53:36,467 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX START TEST SCENARIO XXXXXXXXXX
-2023-07-27 06:53:36,469 - org.justtestit.buggy.steps.Hooks -INFO - Scenario: Verify logout
-2023-07-27 06:53:36,470 - commons.properties.PropertiesManager -INFO - Constructing PropertiesManager with file path: '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties'
-2023-07-27 06:53:36,470 - commons.properties.PropertiesManager -INFO - Loading properties file
-2023-07-27 06:53:36,471 - commons.properties.PropertiesManager -INFO - Properties file '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties' loaded successfully
-2023-07-27 06:53:36,471 - commons.web.WebDriverManager -INFO - Constructing WebDriverManager with the specified properties manager
-2023-07-27 06:53:36,472 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.wait' as int
-2023-07-27 06:53:36,473 - commons.web.WebDriverManager -INFO - Constructing WebDriverInitializer with the specified properties manager
-2023-07-27 06:53:36,473 - commons.web.WebDriverManager -INFO - Initializing WebDriver
-2023-07-27 06:53:36,475 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.browser.name' as string
-2023-07-27 06:53:36,475 - commons.properties.PropertiesManager -INFO - Returning Property of 'headless' as string
-2023-07-27 06:53:36,475 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.manager' as boolean
-2023-07-27 06:53:36,552 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 115)
-2023-07-27 06:53:36,560 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
-2023-07-27 06:53:36,857 - commons.web.WebDriverManager -INFO - Web browser 'chrome' launched successfully
-2023-07-27 06:53:36,857 - commons.properties.PropertiesManager -INFO - Returning Property of 'windows.maximize' as boolean
-2023-07-27 06:53:36,857 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:53:36,967 - org.justtestit.buggy.steps.Hooks -INFO - Browser windows maximized successfully
-2023-07-27 06:53:36,968 - commons.properties.PropertiesManager -INFO - Returning Property of 'implicitly.wait' as int
-2023-07-27 06:53:36,968 - org.justtestit.buggy.steps.Hooks -INFO - Implicit wait not implemented
-2023-07-27 06:53:36,969 - commons.properties.PropertiesManager -INFO - Returning Property of 'page.load.timeout' as int
-2023-07-27 06:53:36,969 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:53:36,973 - org.justtestit.buggy.steps.Hooks -INFO - Page load timeout '60 second(s)' implemented successfully
-2023-07-27 06:53:36,975 - org.justtestit.buggy.steps.LoginSteps -INFO - Given I am at Buggy login page
-2023-07-27 06:53:36,975 - commons.properties.PropertiesManager -INFO - Returning Property of 'base.url' as string
-2023-07-27 06:53:36,977 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:53:38,065 - org.justtestit.buggy.steps.LoginSteps -INFO - When I login Buggy with user: {string} and password: {string}
-2023-07-27 06:53:38,066 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:38,109 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: login
-2023-07-27 06:53:38,175 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:38,205 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: password
-2023-07-27 06:53:38,262 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:38,300 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.cssSelector: button[type='submit']
-2023-07-27 06:53:38,352 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I should reach to user dashboard
-2023-07-27 06:53:38,353 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I should see the relevant user first name: {string}
-2023-07-27 06:53:38,353 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:41,465 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.xpath: //*[contains(text(),'Ricky')]
-2023-07-27 06:53:41,479 - org.justtestit.buggy.steps.LoginSteps -INFO - When I click on Logout
-2023-07-27 06:53:41,479 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:41,512 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.linkText: Logout
-2023-07-27 06:53:41,553 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I should logged out successfully
-2023-07-27 06:53:41,556 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:41,588 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.cssSelector: button[type='submit']
-2023-07-27 06:53:41,600 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:41,617 - org.justtestit.buggy.steps.Hooks -INFO - Skipped capturing screenshot, because webDriverManager is null
-2023-07-27 06:53:41,617 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:53:41,723 - org.justtestit.buggy.steps.Hooks -INFO - Closed web browser window(s) and ended the WebDriver session
-2023-07-27 06:53:41,724 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX END TEST SCENARIO XXXXXXXXXX
-2023-07-27 06:53:41,735 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX START TEST SCENARIO XXXXXXXXXX
-2023-07-27 06:53:41,735 - org.justtestit.buggy.steps.Hooks -INFO - Scenario: Verify invalid login
-2023-07-27 06:53:41,736 - commons.properties.PropertiesManager -INFO - Constructing PropertiesManager with file path: '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties'
-2023-07-27 06:53:41,736 - commons.properties.PropertiesManager -INFO - Loading properties file
-2023-07-27 06:53:41,737 - commons.properties.PropertiesManager -INFO - Properties file '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties' loaded successfully
-2023-07-27 06:53:41,738 - commons.web.WebDriverManager -INFO - Constructing WebDriverManager with the specified properties manager
-2023-07-27 06:53:41,738 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.wait' as int
-2023-07-27 06:53:41,739 - commons.web.WebDriverManager -INFO - Constructing WebDriverInitializer with the specified properties manager
-2023-07-27 06:53:41,739 - commons.web.WebDriverManager -INFO - Initializing WebDriver
-2023-07-27 06:53:41,740 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.browser.name' as string
-2023-07-27 06:53:41,740 - commons.properties.PropertiesManager -INFO - Returning Property of 'headless' as string
-2023-07-27 06:53:41,741 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.manager' as boolean
-2023-07-27 06:53:41,748 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 115)
-2023-07-27 06:53:41,755 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
-2023-07-27 06:53:42,062 - commons.web.WebDriverManager -INFO - Web browser 'chrome' launched successfully
-2023-07-27 06:53:42,063 - commons.properties.PropertiesManager -INFO - Returning Property of 'windows.maximize' as boolean
-2023-07-27 06:53:42,063 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:53:42,180 - org.justtestit.buggy.steps.Hooks -INFO - Browser windows maximized successfully
-2023-07-27 06:53:42,180 - commons.properties.PropertiesManager -INFO - Returning Property of 'implicitly.wait' as int
-2023-07-27 06:53:42,180 - org.justtestit.buggy.steps.Hooks -INFO - Implicit wait not implemented
-2023-07-27 06:53:42,180 - commons.properties.PropertiesManager -INFO - Returning Property of 'page.load.timeout' as int
-2023-07-27 06:53:42,180 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:53:42,185 - org.justtestit.buggy.steps.Hooks -INFO - Page load timeout '60 second(s)' implemented successfully
-2023-07-27 06:53:42,186 - org.justtestit.buggy.steps.LoginSteps -INFO - Given I am at Buggy login page
-2023-07-27 06:53:42,186 - commons.properties.PropertiesManager -INFO - Returning Property of 'base.url' as string
-2023-07-27 06:53:42,186 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:53:43,303 - org.justtestit.buggy.steps.LoginSteps -INFO - When I login Buggy with user: {string} and password: {string}
-2023-07-27 06:53:43,303 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:43,347 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: login
-2023-07-27 06:53:43,417 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:43,447 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: password
-2023-07-27 06:53:43,510 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:43,550 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.cssSelector: button[type='submit']
-2023-07-27 06:53:43,593 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I should see error message: {string}
-2023-07-27 06:53:43,593 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:44,650 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.xpath: //*[contains(text(),'Invalid username/password')]
-2023-07-27 06:53:44,662 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I am still on Home page
-2023-07-27 06:53:44,662 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:44,681 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.cssSelector: button[type='submit']
-2023-07-27 06:53:44,694 - org.justtestit.buggy.steps.Hooks -INFO - Skipped capturing screenshot, because webDriverManager is null
-2023-07-27 06:53:44,695 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:53:44,799 - org.justtestit.buggy.steps.Hooks -INFO - Closed web browser window(s) and ended the WebDriver session
-2023-07-27 06:53:44,800 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX END TEST SCENARIO XXXXXXXXXX
-2023-07-27 06:53:44,805 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX START TEST SCENARIO XXXXXXXXXX
-2023-07-27 06:53:44,805 - org.justtestit.buggy.steps.Hooks -INFO - Scenario: Verify invalid login
-2023-07-27 06:53:44,806 - commons.properties.PropertiesManager -INFO - Constructing PropertiesManager with file path: '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties'
-2023-07-27 06:53:44,806 - commons.properties.PropertiesManager -INFO - Loading properties file
-2023-07-27 06:53:44,807 - commons.properties.PropertiesManager -INFO - Properties file '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties' loaded successfully
-2023-07-27 06:53:44,808 - commons.web.WebDriverManager -INFO - Constructing WebDriverManager with the specified properties manager
-2023-07-27 06:53:44,808 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.wait' as int
-2023-07-27 06:53:44,808 - commons.web.WebDriverManager -INFO - Constructing WebDriverInitializer with the specified properties manager
-2023-07-27 06:53:44,808 - commons.web.WebDriverManager -INFO - Initializing WebDriver
-2023-07-27 06:53:44,810 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.browser.name' as string
-2023-07-27 06:53:44,810 - commons.properties.PropertiesManager -INFO - Returning Property of 'headless' as string
-2023-07-27 06:53:44,810 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.manager' as boolean
-2023-07-27 06:53:44,816 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 115)
-2023-07-27 06:53:44,819 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
-2023-07-27 06:53:45,129 - commons.web.WebDriverManager -INFO - Web browser 'chrome' launched successfully
-2023-07-27 06:53:45,129 - commons.properties.PropertiesManager -INFO - Returning Property of 'windows.maximize' as boolean
-2023-07-27 06:53:45,129 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:53:45,238 - org.justtestit.buggy.steps.Hooks -INFO - Browser windows maximized successfully
-2023-07-27 06:53:45,238 - commons.properties.PropertiesManager -INFO - Returning Property of 'implicitly.wait' as int
-2023-07-27 06:53:45,238 - org.justtestit.buggy.steps.Hooks -INFO - Implicit wait not implemented
-2023-07-27 06:53:45,238 - commons.properties.PropertiesManager -INFO - Returning Property of 'page.load.timeout' as int
-2023-07-27 06:53:45,238 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:53:45,241 - org.justtestit.buggy.steps.Hooks -INFO - Page load timeout '60 second(s)' implemented successfully
-2023-07-27 06:53:45,242 - org.justtestit.buggy.steps.LoginSteps -INFO - Given I am at Buggy login page
-2023-07-27 06:53:45,243 - commons.properties.PropertiesManager -INFO - Returning Property of 'base.url' as string
-2023-07-27 06:53:45,244 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:53:45,731 - org.justtestit.buggy.steps.LoginSteps -INFO - When I login Buggy with user: {string} and password: {string}
-2023-07-27 06:53:45,731 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:45,773 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: login
-2023-07-27 06:53:45,834 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:45,861 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: password
-2023-07-27 06:53:45,929 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:45,972 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.cssSelector: button[type='submit']
-2023-07-27 06:53:46,014 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I should see error message: {string}
-2023-07-27 06:53:46,014 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:47,073 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.xpath: //*[contains(text(),'Invalid username/password')]
-2023-07-27 06:53:47,085 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I am still on Home page
-2023-07-27 06:53:47,085 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:47,104 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.cssSelector: button[type='submit']
-2023-07-27 06:53:47,116 - org.justtestit.buggy.steps.Hooks -INFO - Skipped capturing screenshot, because webDriverManager is null
-2023-07-27 06:53:47,116 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:53:47,218 - org.justtestit.buggy.steps.Hooks -INFO - Closed web browser window(s) and ended the WebDriver session
-2023-07-27 06:53:47,219 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX END TEST SCENARIO XXXXXXXXXX
-2023-07-27 06:53:47,223 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX START TEST SCENARIO XXXXXXXXXX
-2023-07-27 06:53:47,223 - org.justtestit.buggy.steps.Hooks -INFO - Scenario: Verify invalid login
-2023-07-27 06:53:47,224 - commons.properties.PropertiesManager -INFO - Constructing PropertiesManager with file path: '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties'
-2023-07-27 06:53:47,224 - commons.properties.PropertiesManager -INFO - Loading properties file
-2023-07-27 06:53:47,224 - commons.properties.PropertiesManager -INFO - Properties file '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties' loaded successfully
-2023-07-27 06:53:47,224 - commons.web.WebDriverManager -INFO - Constructing WebDriverManager with the specified properties manager
-2023-07-27 06:53:47,224 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.wait' as int
-2023-07-27 06:53:47,224 - commons.web.WebDriverManager -INFO - Constructing WebDriverInitializer with the specified properties manager
-2023-07-27 06:53:47,224 - commons.web.WebDriverManager -INFO - Initializing WebDriver
-2023-07-27 06:53:47,224 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.browser.name' as string
-2023-07-27 06:53:47,225 - commons.properties.PropertiesManager -INFO - Returning Property of 'headless' as string
-2023-07-27 06:53:47,225 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.manager' as boolean
-2023-07-27 06:53:47,232 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 115)
-2023-07-27 06:53:47,235 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
-2023-07-27 06:53:47,569 - commons.web.WebDriverManager -INFO - Web browser 'chrome' launched successfully
-2023-07-27 06:53:47,569 - commons.properties.PropertiesManager -INFO - Returning Property of 'windows.maximize' as boolean
-2023-07-27 06:53:47,570 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:53:47,679 - org.justtestit.buggy.steps.Hooks -INFO - Browser windows maximized successfully
-2023-07-27 06:53:47,679 - commons.properties.PropertiesManager -INFO - Returning Property of 'implicitly.wait' as int
-2023-07-27 06:53:47,679 - org.justtestit.buggy.steps.Hooks -INFO - Implicit wait not implemented
-2023-07-27 06:53:47,679 - commons.properties.PropertiesManager -INFO - Returning Property of 'page.load.timeout' as int
-2023-07-27 06:53:47,679 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:53:47,682 - org.justtestit.buggy.steps.Hooks -INFO - Page load timeout '60 second(s)' implemented successfully
-2023-07-27 06:53:47,682 - org.justtestit.buggy.steps.LoginSteps -INFO - Given I am at Buggy login page
-2023-07-27 06:53:47,683 - commons.properties.PropertiesManager -INFO - Returning Property of 'base.url' as string
-2023-07-27 06:53:47,683 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:53:48,778 - org.justtestit.buggy.steps.LoginSteps -INFO - When I login Buggy with user: {string} and password: {string}
-2023-07-27 06:53:48,778 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:48,821 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: login
-2023-07-27 06:53:48,888 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:48,918 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: password
-2023-07-27 06:53:48,955 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:48,999 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.cssSelector: button[type='submit']
-2023-07-27 06:53:49,080 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I should see error message: {string}
-2023-07-27 06:53:50,081 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I am still on Home page
-2023-07-27 06:53:50,082 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:50,110 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.cssSelector: button[type='submit']
-2023-07-27 06:53:50,128 - org.justtestit.buggy.steps.Hooks -INFO - Skipped capturing screenshot, because webDriverManager is null
-2023-07-27 06:53:50,128 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:53:50,208 - org.justtestit.buggy.steps.Hooks -INFO - Closed web browser window(s) and ended the WebDriver session
-2023-07-27 06:53:50,208 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX END TEST SCENARIO XXXXXXXXXX
-2023-07-27 06:53:50,213 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX START TEST SCENARIO XXXXXXXXXX
-2023-07-27 06:53:50,213 - org.justtestit.buggy.steps.Hooks -INFO - Scenario: Verify invalid login
-2023-07-27 06:53:50,213 - commons.properties.PropertiesManager -INFO - Constructing PropertiesManager with file path: '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties'
-2023-07-27 06:53:50,213 - commons.properties.PropertiesManager -INFO - Loading properties file
-2023-07-27 06:53:50,213 - commons.properties.PropertiesManager -INFO - Properties file '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties' loaded successfully
-2023-07-27 06:53:50,213 - commons.web.WebDriverManager -INFO - Constructing WebDriverManager with the specified properties manager
-2023-07-27 06:53:50,213 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.wait' as int
-2023-07-27 06:53:50,214 - commons.web.WebDriverManager -INFO - Constructing WebDriverInitializer with the specified properties manager
-2023-07-27 06:53:50,214 - commons.web.WebDriverManager -INFO - Initializing WebDriver
-2023-07-27 06:53:50,214 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.browser.name' as string
-2023-07-27 06:53:50,214 - commons.properties.PropertiesManager -INFO - Returning Property of 'headless' as string
-2023-07-27 06:53:50,214 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.manager' as boolean
-2023-07-27 06:53:50,221 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 115)
-2023-07-27 06:53:50,224 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
-2023-07-27 06:53:50,535 - commons.web.WebDriverManager -INFO - Web browser 'chrome' launched successfully
-2023-07-27 06:53:50,538 - commons.properties.PropertiesManager -INFO - Returning Property of 'windows.maximize' as boolean
-2023-07-27 06:53:50,538 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:53:50,647 - org.justtestit.buggy.steps.Hooks -INFO - Browser windows maximized successfully
-2023-07-27 06:53:50,647 - commons.properties.PropertiesManager -INFO - Returning Property of 'implicitly.wait' as int
-2023-07-27 06:53:50,648 - org.justtestit.buggy.steps.Hooks -INFO - Implicit wait not implemented
-2023-07-27 06:53:50,648 - commons.properties.PropertiesManager -INFO - Returning Property of 'page.load.timeout' as int
-2023-07-27 06:53:50,648 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:53:50,650 - org.justtestit.buggy.steps.Hooks -INFO - Page load timeout '60 second(s)' implemented successfully
-2023-07-27 06:53:50,650 - org.justtestit.buggy.steps.LoginSteps -INFO - Given I am at Buggy login page
-2023-07-27 06:53:50,651 - commons.properties.PropertiesManager -INFO - Returning Property of 'base.url' as string
-2023-07-27 06:53:50,651 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:53:51,752 - org.justtestit.buggy.steps.LoginSteps -INFO - When I login Buggy with user: {string} and password: {string}
-2023-07-27 06:53:51,752 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:51,794 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: login
-2023-07-27 06:53:51,855 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:51,884 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: password
-2023-07-27 06:53:51,943 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:51,981 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.cssSelector: button[type='submit']
-2023-07-27 06:53:52,015 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I should see error message: {string}
-2023-07-27 06:53:52,015 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:53,073 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.xpath: //*[contains(text(),'Invalid username/password')]
-2023-07-27 06:53:53,086 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I am still on Home page
-2023-07-27 06:53:53,086 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:53,104 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.cssSelector: button[type='submit']
-2023-07-27 06:53:53,117 - org.justtestit.buggy.steps.Hooks -INFO - Skipped capturing screenshot, because webDriverManager is null
-2023-07-27 06:53:53,118 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:53:53,219 - org.justtestit.buggy.steps.Hooks -INFO - Closed web browser window(s) and ended the WebDriver session
-2023-07-27 06:53:53,220 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX END TEST SCENARIO XXXXXXXXXX
-2023-07-27 06:53:53,224 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX START TEST SCENARIO XXXXXXXXXX
-2023-07-27 06:53:53,224 - org.justtestit.buggy.steps.Hooks -INFO - Scenario: Verify invalid login
-2023-07-27 06:53:53,224 - commons.properties.PropertiesManager -INFO - Constructing PropertiesManager with file path: '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties'
-2023-07-27 06:53:53,224 - commons.properties.PropertiesManager -INFO - Loading properties file
-2023-07-27 06:53:53,224 - commons.properties.PropertiesManager -INFO - Properties file '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties' loaded successfully
-2023-07-27 06:53:53,224 - commons.web.WebDriverManager -INFO - Constructing WebDriverManager with the specified properties manager
-2023-07-27 06:53:53,224 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.wait' as int
-2023-07-27 06:53:53,224 - commons.web.WebDriverManager -INFO - Constructing WebDriverInitializer with the specified properties manager
-2023-07-27 06:53:53,224 - commons.web.WebDriverManager -INFO - Initializing WebDriver
-2023-07-27 06:53:53,224 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.browser.name' as string
-2023-07-27 06:53:53,225 - commons.properties.PropertiesManager -INFO - Returning Property of 'headless' as string
-2023-07-27 06:53:53,225 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.manager' as boolean
-2023-07-27 06:53:53,231 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 115)
-2023-07-27 06:53:53,234 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
-2023-07-27 06:53:53,535 - commons.web.WebDriverManager -INFO - Web browser 'chrome' launched successfully
-2023-07-27 06:53:53,535 - commons.properties.PropertiesManager -INFO - Returning Property of 'windows.maximize' as boolean
-2023-07-27 06:53:53,535 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:53:53,648 - org.justtestit.buggy.steps.Hooks -INFO - Browser windows maximized successfully
-2023-07-27 06:53:53,649 - commons.properties.PropertiesManager -INFO - Returning Property of 'implicitly.wait' as int
-2023-07-27 06:53:53,649 - org.justtestit.buggy.steps.Hooks -INFO - Implicit wait not implemented
-2023-07-27 06:53:53,649 - commons.properties.PropertiesManager -INFO - Returning Property of 'page.load.timeout' as int
-2023-07-27 06:53:53,649 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:53:53,652 - org.justtestit.buggy.steps.Hooks -INFO - Page load timeout '60 second(s)' implemented successfully
-2023-07-27 06:53:53,653 - org.justtestit.buggy.steps.LoginSteps -INFO - Given I am at Buggy login page
-2023-07-27 06:53:53,654 - commons.properties.PropertiesManager -INFO - Returning Property of 'base.url' as string
-2023-07-27 06:53:53,654 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:53:54,735 - org.justtestit.buggy.steps.LoginSteps -INFO - When I login Buggy with user: {string} and password: {string}
-2023-07-27 06:53:54,736 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:54,776 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: login
-2023-07-27 06:53:54,825 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:54,854 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: password
-2023-07-27 06:53:54,911 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:54,941 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.cssSelector: button[type='submit']
-2023-07-27 06:53:54,994 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I should see error message: {string}
-2023-07-27 06:53:55,995 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I am still on Home page
-2023-07-27 06:53:55,995 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:56,017 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.cssSelector: button[type='submit']
-2023-07-27 06:53:56,031 - org.justtestit.buggy.steps.Hooks -INFO - Skipped capturing screenshot, because webDriverManager is null
-2023-07-27 06:53:56,032 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:53:56,133 - org.justtestit.buggy.steps.Hooks -INFO - Closed web browser window(s) and ended the WebDriver session
-2023-07-27 06:53:56,133 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX END TEST SCENARIO XXXXXXXXXX
-2023-07-27 06:53:56,137 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX START TEST SCENARIO XXXXXXXXXX
-2023-07-27 06:53:56,137 - org.justtestit.buggy.steps.Hooks -INFO - Scenario: Verify invalid login
-2023-07-27 06:53:56,137 - commons.properties.PropertiesManager -INFO - Constructing PropertiesManager with file path: '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties'
-2023-07-27 06:53:56,137 - commons.properties.PropertiesManager -INFO - Loading properties file
-2023-07-27 06:53:56,137 - commons.properties.PropertiesManager -INFO - Properties file '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties' loaded successfully
-2023-07-27 06:53:56,138 - commons.web.WebDriverManager -INFO - Constructing WebDriverManager with the specified properties manager
-2023-07-27 06:53:56,138 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.wait' as int
-2023-07-27 06:53:56,138 - commons.web.WebDriverManager -INFO - Constructing WebDriverInitializer with the specified properties manager
-2023-07-27 06:53:56,138 - commons.web.WebDriverManager -INFO - Initializing WebDriver
-2023-07-27 06:53:56,138 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.browser.name' as string
-2023-07-27 06:53:56,138 - commons.properties.PropertiesManager -INFO - Returning Property of 'headless' as string
-2023-07-27 06:53:56,138 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.manager' as boolean
-2023-07-27 06:53:56,144 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 115)
-2023-07-27 06:53:56,147 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
-2023-07-27 06:53:56,468 - commons.web.WebDriverManager -INFO - Web browser 'chrome' launched successfully
-2023-07-27 06:53:56,469 - commons.properties.PropertiesManager -INFO - Returning Property of 'windows.maximize' as boolean
-2023-07-27 06:53:56,469 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:53:56,578 - org.justtestit.buggy.steps.Hooks -INFO - Browser windows maximized successfully
-2023-07-27 06:53:56,579 - commons.properties.PropertiesManager -INFO - Returning Property of 'implicitly.wait' as int
-2023-07-27 06:53:56,579 - org.justtestit.buggy.steps.Hooks -INFO - Implicit wait not implemented
-2023-07-27 06:53:56,579 - commons.properties.PropertiesManager -INFO - Returning Property of 'page.load.timeout' as int
-2023-07-27 06:53:56,579 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:53:56,582 - org.justtestit.buggy.steps.Hooks -INFO - Page load timeout '60 second(s)' implemented successfully
-2023-07-27 06:53:56,582 - org.justtestit.buggy.steps.LoginSteps -INFO - Given I am at Buggy login page
-2023-07-27 06:53:56,582 - commons.properties.PropertiesManager -INFO - Returning Property of 'base.url' as string
-2023-07-27 06:53:56,582 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:53:57,685 - org.justtestit.buggy.steps.LoginSteps -INFO - When I login Buggy with user: {string} and password: {string}
-2023-07-27 06:53:57,685 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:57,723 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: login
-2023-07-27 06:53:57,777 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:57,805 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: password
-2023-07-27 06:53:57,844 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:57,884 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.cssSelector: button[type='submit']
-2023-07-27 06:53:57,929 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I should see error message: {string}
-2023-07-27 06:53:58,930 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I am still on Home page
-2023-07-27 06:53:58,930 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:53:58,953 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.cssSelector: button[type='submit']
-2023-07-27 06:53:58,970 - org.justtestit.buggy.steps.Hooks -INFO - Skipped capturing screenshot, because webDriverManager is null
-2023-07-27 06:53:58,970 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:53:59,079 - org.justtestit.buggy.steps.Hooks -INFO - Closed web browser window(s) and ended the WebDriver session
-2023-07-27 06:53:59,080 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX END TEST SCENARIO XXXXXXXXXX
-2023-07-27 06:53:59,087 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX START TEST SCENARIO XXXXXXXXXX
-2023-07-27 06:53:59,088 - org.justtestit.buggy.steps.Hooks -INFO - Scenario: Verify valid registration
-2023-07-27 06:53:59,088 - commons.properties.PropertiesManager -INFO - Constructing PropertiesManager with file path: '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties'
-2023-07-27 06:53:59,089 - commons.properties.PropertiesManager -INFO - Loading properties file
-2023-07-27 06:53:59,089 - commons.properties.PropertiesManager -INFO - Properties file '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties' loaded successfully
-2023-07-27 06:53:59,090 - commons.web.WebDriverManager -INFO - Constructing WebDriverManager with the specified properties manager
-2023-07-27 06:53:59,090 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.wait' as int
-2023-07-27 06:53:59,091 - commons.web.WebDriverManager -INFO - Constructing WebDriverInitializer with the specified properties manager
-2023-07-27 06:53:59,091 - commons.web.WebDriverManager -INFO - Initializing WebDriver
-2023-07-27 06:53:59,092 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.browser.name' as string
-2023-07-27 06:53:59,092 - commons.properties.PropertiesManager -INFO - Returning Property of 'headless' as string
-2023-07-27 06:53:59,092 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.manager' as boolean
-2023-07-27 06:53:59,099 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 115)
-2023-07-27 06:53:59,102 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
-2023-07-27 06:53:59,409 - commons.web.WebDriverManager -INFO - Web browser 'chrome' launched successfully
-2023-07-27 06:53:59,410 - commons.properties.PropertiesManager -INFO - Returning Property of 'windows.maximize' as boolean
-2023-07-27 06:53:59,412 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:53:59,518 - org.justtestit.buggy.steps.Hooks -INFO - Browser windows maximized successfully
-2023-07-27 06:53:59,519 - commons.properties.PropertiesManager -INFO - Returning Property of 'implicitly.wait' as int
-2023-07-27 06:53:59,519 - org.justtestit.buggy.steps.Hooks -INFO - Implicit wait not implemented
-2023-07-27 06:53:59,519 - commons.properties.PropertiesManager -INFO - Returning Property of 'page.load.timeout' as int
-2023-07-27 06:53:59,519 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:53:59,521 - org.justtestit.buggy.steps.Hooks -INFO - Page load timeout '60 second(s)' implemented successfully
-2023-07-27 06:53:59,522 - org.justtestit.buggy.steps.RegisterSteps -INFO - Given I am at Buggy register page
-2023-07-27 06:53:59,522 - commons.properties.PropertiesManager -INFO - Returning Property of 'base.url' as string
-2023-07-27 06:53:59,522 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:54:01,472 - org.justtestit.buggy.steps.RegisterSteps -INFO - When I register with valid data
-2023-07-27 06:54:01,634 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:01,668 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: username
-2023-07-27 06:54:01,750 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:01,779 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: firstName
-2023-07-27 06:54:01,833 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:01,859 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: lastName
-2023-07-27 06:54:01,904 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:01,928 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: password
-2023-07-27 06:54:01,981 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:02,003 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: confirmPassword
-2023-07-27 06:54:02,059 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:02,092 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.xpath: //button[text()='Register']
-2023-07-27 06:54:02,132 - org.justtestit.buggy.steps.RegisterSteps -INFO - Then I should see the notification message: {string}
-2023-07-27 06:54:02,132 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:04,208 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.xpath: //div[contains(text(),'Registration is successful')]
-2023-07-27 06:54:04,221 - org.justtestit.buggy.steps.RegisterSteps -INFO - When I login with registered user
-2023-07-27 06:54:04,221 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:04,242 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: login
-2023-07-27 06:54:04,298 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:04,320 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: password
-2023-07-27 06:54:04,369 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:04,404 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.cssSelector: button[type='submit']
-2023-07-27 06:54:04,439 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I should see the relevant user first name: {string}
-2023-07-27 06:54:04,439 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:07,036 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.xpath: //*[contains(text(),'John')]
-2023-07-27 06:54:07,049 - org.justtestit.buggy.steps.RegisterSteps -INFO - Then I should see the valid user info under user profile page
-2023-07-27 06:54:07,049 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:07,082 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.linkText: Profile
-2023-07-27 06:54:07,162 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:09,243 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: username
-2023-07-27 06:54:09,257 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:09,279 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: firstName
-2023-07-27 06:54:09,292 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:09,309 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: lastName
-2023-07-27 06:54:09,320 - org.justtestit.buggy.steps.Hooks -INFO - Skipped capturing screenshot, because webDriverManager is null
-2023-07-27 06:54:09,320 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:54:09,422 - org.justtestit.buggy.steps.Hooks -INFO - Closed web browser window(s) and ended the WebDriver session
-2023-07-27 06:54:09,422 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX END TEST SCENARIO XXXXXXXXXX
-2023-07-27 06:54:09,426 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX START TEST SCENARIO XXXXXXXXXX
-2023-07-27 06:54:09,426 - org.justtestit.buggy.steps.Hooks -INFO - Scenario: Verify registration with existing user
-2023-07-27 06:54:09,427 - commons.properties.PropertiesManager -INFO - Constructing PropertiesManager with file path: '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties'
-2023-07-27 06:54:09,427 - commons.properties.PropertiesManager -INFO - Loading properties file
-2023-07-27 06:54:09,427 - commons.properties.PropertiesManager -INFO - Properties file '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties' loaded successfully
-2023-07-27 06:54:09,427 - commons.web.WebDriverManager -INFO - Constructing WebDriverManager with the specified properties manager
-2023-07-27 06:54:09,427 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.wait' as int
-2023-07-27 06:54:09,427 - commons.web.WebDriverManager -INFO - Constructing WebDriverInitializer with the specified properties manager
-2023-07-27 06:54:09,428 - commons.web.WebDriverManager -INFO - Initializing WebDriver
-2023-07-27 06:54:09,428 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.browser.name' as string
-2023-07-27 06:54:09,428 - commons.properties.PropertiesManager -INFO - Returning Property of 'headless' as string
-2023-07-27 06:54:09,428 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.manager' as boolean
-2023-07-27 06:54:09,436 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 115)
-2023-07-27 06:54:09,439 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
-2023-07-27 06:54:09,731 - commons.web.WebDriverManager -INFO - Web browser 'chrome' launched successfully
-2023-07-27 06:54:09,731 - commons.properties.PropertiesManager -INFO - Returning Property of 'windows.maximize' as boolean
-2023-07-27 06:54:09,731 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:54:09,838 - org.justtestit.buggy.steps.Hooks -INFO - Browser windows maximized successfully
-2023-07-27 06:54:09,838 - commons.properties.PropertiesManager -INFO - Returning Property of 'implicitly.wait' as int
-2023-07-27 06:54:09,838 - org.justtestit.buggy.steps.Hooks -INFO - Implicit wait not implemented
-2023-07-27 06:54:09,838 - commons.properties.PropertiesManager -INFO - Returning Property of 'page.load.timeout' as int
-2023-07-27 06:54:09,838 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:54:09,841 - org.justtestit.buggy.steps.Hooks -INFO - Page load timeout '60 second(s)' implemented successfully
-2023-07-27 06:54:09,841 - org.justtestit.buggy.steps.RegisterSteps -INFO - Given I am at Buggy register page
-2023-07-27 06:54:09,841 - commons.properties.PropertiesManager -INFO - Returning Property of 'base.url' as string
-2023-07-27 06:54:09,841 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:54:10,926 - org.justtestit.buggy.steps.RegisterSteps -INFO - When I try to register with existing user
-2023-07-27 06:54:10,926 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:10,967 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: username
-2023-07-27 06:54:11,033 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:11,078 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: firstName
-2023-07-27 06:54:11,128 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:11,152 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: lastName
-2023-07-27 06:54:11,202 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:11,228 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: password
-2023-07-27 06:54:11,281 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:11,305 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: confirmPassword
-2023-07-27 06:54:11,372 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:11,403 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.xpath: //button[text()='Register']
-2023-07-27 06:54:11,450 - org.justtestit.buggy.steps.RegisterSteps -INFO - Then I should see the error message: {string}
-2023-07-27 06:54:11,450 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:13,536 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.xpath: //div[contains(text(),'User already exists')]
-2023-07-27 06:54:13,550 - org.justtestit.buggy.steps.Hooks -INFO - Skipped capturing screenshot, because webDriverManager is null
-2023-07-27 06:54:13,551 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:54:13,655 - org.justtestit.buggy.steps.Hooks -INFO - Closed web browser window(s) and ended the WebDriver session
-2023-07-27 06:54:13,655 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX END TEST SCENARIO XXXXXXXXXX
-2023-07-27 06:54:13,660 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX START TEST SCENARIO XXXXXXXXXX
-2023-07-27 06:54:13,660 - org.justtestit.buggy.steps.Hooks -INFO - Scenario: Verify registration with existing user
-2023-07-27 06:54:13,660 - commons.properties.PropertiesManager -INFO - Constructing PropertiesManager with file path: '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties'
-2023-07-27 06:54:13,660 - commons.properties.PropertiesManager -INFO - Loading properties file
-2023-07-27 06:54:13,660 - commons.properties.PropertiesManager -INFO - Properties file '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties' loaded successfully
-2023-07-27 06:54:13,660 - commons.web.WebDriverManager -INFO - Constructing WebDriverManager with the specified properties manager
-2023-07-27 06:54:13,660 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.wait' as int
-2023-07-27 06:54:13,661 - commons.web.WebDriverManager -INFO - Constructing WebDriverInitializer with the specified properties manager
-2023-07-27 06:54:13,661 - commons.web.WebDriverManager -INFO - Initializing WebDriver
-2023-07-27 06:54:13,661 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.browser.name' as string
-2023-07-27 06:54:13,661 - commons.properties.PropertiesManager -INFO - Returning Property of 'headless' as string
-2023-07-27 06:54:13,661 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.manager' as boolean
-2023-07-27 06:54:13,672 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 115)
-2023-07-27 06:54:13,674 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
-2023-07-27 06:54:13,986 - commons.web.WebDriverManager -INFO - Web browser 'chrome' launched successfully
-2023-07-27 06:54:13,987 - commons.properties.PropertiesManager -INFO - Returning Property of 'windows.maximize' as boolean
-2023-07-27 06:54:13,988 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:54:14,096 - org.justtestit.buggy.steps.Hooks -INFO - Browser windows maximized successfully
-2023-07-27 06:54:14,096 - commons.properties.PropertiesManager -INFO - Returning Property of 'implicitly.wait' as int
-2023-07-27 06:54:14,097 - org.justtestit.buggy.steps.Hooks -INFO - Implicit wait not implemented
-2023-07-27 06:54:14,097 - commons.properties.PropertiesManager -INFO - Returning Property of 'page.load.timeout' as int
-2023-07-27 06:54:14,097 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:54:14,099 - org.justtestit.buggy.steps.Hooks -INFO - Page load timeout '60 second(s)' implemented successfully
-2023-07-27 06:54:14,100 - org.justtestit.buggy.steps.RegisterSteps -INFO - Given I am at Buggy register page
-2023-07-27 06:54:14,100 - commons.properties.PropertiesManager -INFO - Returning Property of 'base.url' as string
-2023-07-27 06:54:14,100 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:54:15,227 - org.justtestit.buggy.steps.RegisterSteps -INFO - When I try to register with existing user
-2023-07-27 06:54:15,227 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:15,266 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: username
-2023-07-27 06:54:15,336 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:15,364 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: firstName
-2023-07-27 06:54:15,423 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:15,452 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: lastName
-2023-07-27 06:54:15,505 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:15,529 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: password
-2023-07-27 06:54:15,580 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:15,600 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: confirmPassword
-2023-07-27 06:54:15,651 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:15,686 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.xpath: //button[text()='Register']
-2023-07-27 06:54:15,725 - org.justtestit.buggy.steps.RegisterSteps -INFO - Then I should see the error message: {string}
-2023-07-27 06:54:15,725 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:17,288 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.xpath: //div[contains(text(),'User already exists')]
-2023-07-27 06:54:17,300 - org.justtestit.buggy.steps.Hooks -INFO - Skipped capturing screenshot, because webDriverManager is null
-2023-07-27 06:54:17,301 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:54:17,403 - org.justtestit.buggy.steps.Hooks -INFO - Closed web browser window(s) and ended the WebDriver session
-2023-07-27 06:54:17,403 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX END TEST SCENARIO XXXXXXXXXX
-2023-07-27 06:54:17,406 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX START TEST SCENARIO XXXXXXXXXX
-2023-07-27 06:54:17,407 - org.justtestit.buggy.steps.Hooks -INFO - Scenario: Verify registration with existing user
-2023-07-27 06:54:17,407 - commons.properties.PropertiesManager -INFO - Constructing PropertiesManager with file path: '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties'
-2023-07-27 06:54:17,407 - commons.properties.PropertiesManager -INFO - Loading properties file
-2023-07-27 06:54:17,407 - commons.properties.PropertiesManager -INFO - Properties file '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties' loaded successfully
-2023-07-27 06:54:17,407 - commons.web.WebDriverManager -INFO - Constructing WebDriverManager with the specified properties manager
-2023-07-27 06:54:17,407 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.wait' as int
-2023-07-27 06:54:17,408 - commons.web.WebDriverManager -INFO - Constructing WebDriverInitializer with the specified properties manager
-2023-07-27 06:54:17,408 - commons.web.WebDriverManager -INFO - Initializing WebDriver
-2023-07-27 06:54:17,408 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.browser.name' as string
-2023-07-27 06:54:17,408 - commons.properties.PropertiesManager -INFO - Returning Property of 'headless' as string
-2023-07-27 06:54:17,408 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.manager' as boolean
-2023-07-27 06:54:17,413 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 115)
-2023-07-27 06:54:17,416 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
-2023-07-27 06:54:17,739 - commons.web.WebDriverManager -INFO - Web browser 'chrome' launched successfully
-2023-07-27 06:54:17,741 - commons.properties.PropertiesManager -INFO - Returning Property of 'windows.maximize' as boolean
-2023-07-27 06:54:17,741 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:54:17,848 - org.justtestit.buggy.steps.Hooks -INFO - Browser windows maximized successfully
-2023-07-27 06:54:17,848 - commons.properties.PropertiesManager -INFO - Returning Property of 'implicitly.wait' as int
-2023-07-27 06:54:17,848 - org.justtestit.buggy.steps.Hooks -INFO - Implicit wait not implemented
-2023-07-27 06:54:17,849 - commons.properties.PropertiesManager -INFO - Returning Property of 'page.load.timeout' as int
-2023-07-27 06:54:17,849 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:54:17,852 - org.justtestit.buggy.steps.Hooks -INFO - Page load timeout '60 second(s)' implemented successfully
-2023-07-27 06:54:17,853 - org.justtestit.buggy.steps.RegisterSteps -INFO - Given I am at Buggy register page
-2023-07-27 06:54:17,853 - commons.properties.PropertiesManager -INFO - Returning Property of 'base.url' as string
-2023-07-27 06:54:17,854 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:54:18,962 - org.justtestit.buggy.steps.RegisterSteps -INFO - When I try to register with existing user
-2023-07-27 06:54:18,962 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:19,006 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: username
-2023-07-27 06:54:19,076 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:19,102 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: firstName
-2023-07-27 06:54:19,163 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:19,186 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: lastName
-2023-07-27 06:54:19,237 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:19,260 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: password
-2023-07-27 06:54:19,311 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:19,332 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: confirmPassword
-2023-07-27 06:54:19,386 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:19,419 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.xpath: //button[text()='Register']
-2023-07-27 06:54:19,465 - org.justtestit.buggy.steps.RegisterSteps -INFO - Then I should see the error message: {string}
-2023-07-27 06:54:19,465 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:21,540 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.xpath: //div[contains(text(),'User already exists')]
-2023-07-27 06:54:21,553 - org.justtestit.buggy.steps.Hooks -INFO - Skipped capturing screenshot, because webDriverManager is null
-2023-07-27 06:54:21,553 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:54:21,655 - org.justtestit.buggy.steps.Hooks -INFO - Closed web browser window(s) and ended the WebDriver session
-2023-07-27 06:54:21,655 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX END TEST SCENARIO XXXXXXXXXX
-2023-07-27 06:54:21,659 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX START TEST SCENARIO XXXXXXXXXX
-2023-07-27 06:54:21,659 - org.justtestit.buggy.steps.Hooks -INFO - Scenario: Verify registration with existing user
-2023-07-27 06:54:21,659 - commons.properties.PropertiesManager -INFO - Constructing PropertiesManager with file path: '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties'
-2023-07-27 06:54:21,659 - commons.properties.PropertiesManager -INFO - Loading properties file
-2023-07-27 06:54:21,659 - commons.properties.PropertiesManager -INFO - Properties file '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties' loaded successfully
-2023-07-27 06:54:21,659 - commons.web.WebDriverManager -INFO - Constructing WebDriverManager with the specified properties manager
-2023-07-27 06:54:21,660 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.wait' as int
-2023-07-27 06:54:21,660 - commons.web.WebDriverManager -INFO - Constructing WebDriverInitializer with the specified properties manager
-2023-07-27 06:54:21,660 - commons.web.WebDriverManager -INFO - Initializing WebDriver
-2023-07-27 06:54:21,660 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.browser.name' as string
-2023-07-27 06:54:21,660 - commons.properties.PropertiesManager -INFO - Returning Property of 'headless' as string
-2023-07-27 06:54:21,660 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.manager' as boolean
-2023-07-27 06:54:21,666 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 115)
-2023-07-27 06:54:21,668 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
-2023-07-27 06:54:21,970 - commons.web.WebDriverManager -INFO - Web browser 'chrome' launched successfully
-2023-07-27 06:54:21,971 - commons.properties.PropertiesManager -INFO - Returning Property of 'windows.maximize' as boolean
-2023-07-27 06:54:21,973 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:54:22,080 - org.justtestit.buggy.steps.Hooks -INFO - Browser windows maximized successfully
-2023-07-27 06:54:22,080 - commons.properties.PropertiesManager -INFO - Returning Property of 'implicitly.wait' as int
-2023-07-27 06:54:22,080 - org.justtestit.buggy.steps.Hooks -INFO - Implicit wait not implemented
-2023-07-27 06:54:22,080 - commons.properties.PropertiesManager -INFO - Returning Property of 'page.load.timeout' as int
-2023-07-27 06:54:22,080 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:54:22,083 - org.justtestit.buggy.steps.Hooks -INFO - Page load timeout '60 second(s)' implemented successfully
-2023-07-27 06:54:22,083 - org.justtestit.buggy.steps.RegisterSteps -INFO - Given I am at Buggy register page
-2023-07-27 06:54:22,083 - commons.properties.PropertiesManager -INFO - Returning Property of 'base.url' as string
-2023-07-27 06:54:22,084 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:54:23,188 - org.justtestit.buggy.steps.RegisterSteps -INFO - When I try to register with existing user
-2023-07-27 06:54:23,188 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:23,228 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: username
-2023-07-27 06:54:23,300 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:23,333 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: firstName
-2023-07-27 06:54:23,397 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:23,427 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: lastName
-2023-07-27 06:54:23,478 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:23,500 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: password
-2023-07-27 06:54:23,554 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:23,574 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: confirmPassword
-2023-07-27 06:54:23,624 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:23,654 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.xpath: //button[text()='Register']
-2023-07-27 06:54:23,699 - org.justtestit.buggy.steps.RegisterSteps -INFO - Then I should see the error message: {string}
-2023-07-27 06:54:23,700 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:25,776 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.xpath: //div[contains(text(),'User already exists')]
-2023-07-27 06:54:25,792 - org.justtestit.buggy.steps.Hooks -INFO - Skipped capturing screenshot, because webDriverManager is null
-2023-07-27 06:54:25,793 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:54:25,895 - org.justtestit.buggy.steps.Hooks -INFO - Closed web browser window(s) and ended the WebDriver session
-2023-07-27 06:54:25,895 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX END TEST SCENARIO XXXXXXXXXX
-2023-07-27 06:54:25,900 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX START TEST SCENARIO XXXXXXXXXX
-2023-07-27 06:54:25,900 - org.justtestit.buggy.steps.Hooks -INFO - Scenario: Verify registration with existing user
-2023-07-27 06:54:25,900 - commons.properties.PropertiesManager -INFO - Constructing PropertiesManager with file path: '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties'
-2023-07-27 06:54:25,900 - commons.properties.PropertiesManager -INFO - Loading properties file
-2023-07-27 06:54:25,900 - commons.properties.PropertiesManager -INFO - Properties file '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties' loaded successfully
-2023-07-27 06:54:25,900 - commons.web.WebDriverManager -INFO - Constructing WebDriverManager with the specified properties manager
-2023-07-27 06:54:25,900 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.wait' as int
-2023-07-27 06:54:25,900 - commons.web.WebDriverManager -INFO - Constructing WebDriverInitializer with the specified properties manager
-2023-07-27 06:54:25,900 - commons.web.WebDriverManager -INFO - Initializing WebDriver
-2023-07-27 06:54:25,901 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.browser.name' as string
-2023-07-27 06:54:25,901 - commons.properties.PropertiesManager -INFO - Returning Property of 'headless' as string
-2023-07-27 06:54:25,901 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.manager' as boolean
-2023-07-27 06:54:25,907 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 115)
-2023-07-27 06:54:25,910 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
-2023-07-27 06:54:26,211 - commons.web.WebDriverManager -INFO - Web browser 'chrome' launched successfully
-2023-07-27 06:54:26,211 - commons.properties.PropertiesManager -INFO - Returning Property of 'windows.maximize' as boolean
-2023-07-27 06:54:26,211 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:54:26,317 - org.justtestit.buggy.steps.Hooks -INFO - Browser windows maximized successfully
-2023-07-27 06:54:26,318 - commons.properties.PropertiesManager -INFO - Returning Property of 'implicitly.wait' as int
-2023-07-27 06:54:26,318 - org.justtestit.buggy.steps.Hooks -INFO - Implicit wait not implemented
-2023-07-27 06:54:26,318 - commons.properties.PropertiesManager -INFO - Returning Property of 'page.load.timeout' as int
-2023-07-27 06:54:26,318 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:54:26,320 - org.justtestit.buggy.steps.Hooks -INFO - Page load timeout '60 second(s)' implemented successfully
-2023-07-27 06:54:26,321 - org.justtestit.buggy.steps.RegisterSteps -INFO - Given I am at Buggy register page
-2023-07-27 06:54:26,321 - commons.properties.PropertiesManager -INFO - Returning Property of 'base.url' as string
-2023-07-27 06:54:26,321 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:54:27,437 - org.justtestit.buggy.steps.RegisterSteps -INFO - When I try to register with existing user
-2023-07-27 06:54:27,437 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:27,475 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: username
-2023-07-27 06:54:27,543 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:27,577 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: firstName
-2023-07-27 06:54:27,631 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:27,658 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: lastName
-2023-07-27 06:54:27,710 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:27,735 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: password
-2023-07-27 06:54:27,807 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:27,834 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: confirmPassword
-2023-07-27 06:54:27,886 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:27,918 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.xpath: //button[text()='Register']
-2023-07-27 06:54:27,957 - org.justtestit.buggy.steps.RegisterSteps -INFO - Then I should see the error message: {string}
-2023-07-27 06:54:27,957 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:29,521 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.xpath: //div[contains(text(),'User already exists')]
-2023-07-27 06:54:29,543 - org.justtestit.buggy.steps.Hooks -INFO - Skipped capturing screenshot, because webDriverManager is null
-2023-07-27 06:54:29,543 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:54:29,645 - org.justtestit.buggy.steps.Hooks -INFO - Closed web browser window(s) and ended the WebDriver session
-2023-07-27 06:54:29,645 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX END TEST SCENARIO XXXXXXXXXX
-2023-07-27 06:54:29,648 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX START TEST SCENARIO XXXXXXXXXX
-2023-07-27 06:54:29,648 - org.justtestit.buggy.steps.Hooks -INFO - Scenario: Verify registration with existing user
-2023-07-27 06:54:29,648 - commons.properties.PropertiesManager -INFO - Constructing PropertiesManager with file path: '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties'
-2023-07-27 06:54:29,648 - commons.properties.PropertiesManager -INFO - Loading properties file
-2023-07-27 06:54:29,648 - commons.properties.PropertiesManager -INFO - Properties file '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties' loaded successfully
-2023-07-27 06:54:29,648 - commons.web.WebDriverManager -INFO - Constructing WebDriverManager with the specified properties manager
-2023-07-27 06:54:29,648 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.wait' as int
-2023-07-27 06:54:29,648 - commons.web.WebDriverManager -INFO - Constructing WebDriverInitializer with the specified properties manager
-2023-07-27 06:54:29,649 - commons.web.WebDriverManager -INFO - Initializing WebDriver
-2023-07-27 06:54:29,649 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.browser.name' as string
-2023-07-27 06:54:29,649 - commons.properties.PropertiesManager -INFO - Returning Property of 'headless' as string
-2023-07-27 06:54:29,649 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.manager' as boolean
-2023-07-27 06:54:29,656 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 115)
-2023-07-27 06:54:29,658 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
-2023-07-27 06:54:29,971 - commons.web.WebDriverManager -INFO - Web browser 'chrome' launched successfully
-2023-07-27 06:54:29,972 - commons.properties.PropertiesManager -INFO - Returning Property of 'windows.maximize' as boolean
-2023-07-27 06:54:29,972 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:54:30,082 - org.justtestit.buggy.steps.Hooks -INFO - Browser windows maximized successfully
-2023-07-27 06:54:30,082 - commons.properties.PropertiesManager -INFO - Returning Property of 'implicitly.wait' as int
-2023-07-27 06:54:30,083 - org.justtestit.buggy.steps.Hooks -INFO - Implicit wait not implemented
-2023-07-27 06:54:30,083 - commons.properties.PropertiesManager -INFO - Returning Property of 'page.load.timeout' as int
-2023-07-27 06:54:30,083 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:54:30,086 - org.justtestit.buggy.steps.Hooks -INFO - Page load timeout '60 second(s)' implemented successfully
-2023-07-27 06:54:30,087 - org.justtestit.buggy.steps.RegisterSteps -INFO - Given I am at Buggy register page
-2023-07-27 06:54:30,087 - commons.properties.PropertiesManager -INFO - Returning Property of 'base.url' as string
-2023-07-27 06:54:30,087 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:54:31,187 - org.justtestit.buggy.steps.RegisterSteps -INFO - When I try to register with existing user
-2023-07-27 06:54:31,187 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:31,225 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: username
-2023-07-27 06:54:31,295 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:31,322 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: firstName
-2023-07-27 06:54:31,384 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:31,409 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: lastName
-2023-07-27 06:54:31,460 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:31,486 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: password
-2023-07-27 06:54:31,541 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:31,563 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: confirmPassword
-2023-07-27 06:54:31,616 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:31,655 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.xpath: //button[text()='Register']
-2023-07-27 06:54:31,690 - org.justtestit.buggy.steps.RegisterSteps -INFO - Then I should see the error message: {string}
-2023-07-27 06:54:31,691 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
-2023-07-27 06:54:33,768 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.xpath: //div[contains(text(),'User already exists')]
-2023-07-27 06:54:33,779 - org.justtestit.buggy.steps.Hooks -INFO - Skipped capturing screenshot, because webDriverManager is null
-2023-07-27 06:54:33,780 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
-2023-07-27 06:54:33,881 - org.justtestit.buggy.steps.Hooks -INFO - Closed web browser window(s) and ended the WebDriver session
-2023-07-27 06:54:33,881 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX END TEST SCENARIO XXXXXXXXXX
+2023-07-27 07:10:17,034 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX START TEST SCENARIO XXXXXXXXXX
+2023-07-27 07:10:17,036 - org.justtestit.buggy.steps.Hooks -INFO - Scenario: Verify valid login
+2023-07-27 07:10:17,038 - commons.properties.PropertiesManager -INFO - Constructing PropertiesManager with file path: '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties'
+2023-07-27 07:10:17,038 - commons.properties.PropertiesManager -INFO - Loading properties file
+2023-07-27 07:10:17,039 - commons.properties.PropertiesManager -INFO - Properties file '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties' loaded successfully
+2023-07-27 07:10:17,040 - commons.web.WebDriverManager -INFO - Constructing WebDriverManager with the specified properties manager
+2023-07-27 07:10:17,041 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.wait' as int
+2023-07-27 07:10:17,042 - commons.web.WebDriverManager -INFO - Constructing WebDriverInitializer with the specified properties manager
+2023-07-27 07:10:17,042 - commons.web.WebDriverManager -INFO - Initializing WebDriver
+2023-07-27 07:10:17,042 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.browser.name' as string
+2023-07-27 07:10:17,042 - commons.properties.PropertiesManager -INFO - Returning Property of 'headless' as string
+2023-07-27 07:10:17,043 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.manager' as boolean
+2023-07-27 07:10:19,170 - io.github.bonigarcia.wdm.online.HttpClient -ERROR - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115
+2023-07-27 07:10:19,173 - io.github.bonigarcia.wdm.versions.VersionDetector -WARN - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115)
+2023-07-27 07:10:19,279 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Reading https://chromedriver.storage.googleapis.com/ to seek chromedriver
+2023-07-27 07:10:19,877 - io.github.bonigarcia.wdm.online.Downloader -INFO - Downloading https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+2023-07-27 07:10:20,178 - io.github.bonigarcia.wdm.online.Downloader -INFO - Extracting driver from compressed file chromedriver_linux64.zip
+2023-07-27 07:10:20,319 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+2023-07-27 07:10:28,942 - commons.web.WebDriverManager -INFO - Web browser 'chrome' launched successfully
+2023-07-27 07:10:28,942 - commons.properties.PropertiesManager -INFO - Returning Property of 'windows.maximize' as boolean
+2023-07-27 07:10:28,943 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:10:29,081 - org.justtestit.buggy.steps.Hooks -INFO - Browser windows maximized successfully
+2023-07-27 07:10:29,082 - commons.properties.PropertiesManager -INFO - Returning Property of 'implicitly.wait' as int
+2023-07-27 07:10:29,082 - org.justtestit.buggy.steps.Hooks -INFO - Implicit wait not implemented
+2023-07-27 07:10:29,082 - commons.properties.PropertiesManager -INFO - Returning Property of 'page.load.timeout' as int
+2023-07-27 07:10:29,083 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:10:29,089 - org.justtestit.buggy.steps.Hooks -INFO - Page load timeout '60 second(s)' implemented successfully
+2023-07-27 07:10:29,092 - org.justtestit.buggy.steps.LoginSteps -INFO - Given I am at Buggy login page
+2023-07-27 07:10:29,093 - commons.properties.PropertiesManager -INFO - Returning Property of 'base.url' as string
+2023-07-27 07:10:29,093 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:10:31,258 - org.justtestit.buggy.steps.LoginSteps -INFO - When I login Buggy with user: {string} and password: {string}
+2023-07-27 07:10:31,259 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:31,419 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: login
+2023-07-27 07:10:31,639 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:31,679 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: password
+2023-07-27 07:10:31,772 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:31,827 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.cssSelector: button[type='submit']
+2023-07-27 07:10:31,946 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I should reach to user dashboard
+2023-07-27 07:10:31,947 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I should see the relevant user first name: {string}
+2023-07-27 07:10:31,947 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:34,631 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.xpath: //*[contains(text(),'Ricky')]
+2023-07-27 07:10:34,657 - org.justtestit.buggy.steps.Hooks -INFO - Skipped capturing screenshot, because webDriverManager is null
+2023-07-27 07:10:34,658 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:10:34,777 - org.justtestit.buggy.steps.Hooks -INFO - Closed web browser window(s) and ended the WebDriver session
+2023-07-27 07:10:34,777 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX END TEST SCENARIO XXXXXXXXXX
+2023-07-27 07:10:34,789 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX START TEST SCENARIO XXXXXXXXXX
+2023-07-27 07:10:34,789 - org.justtestit.buggy.steps.Hooks -INFO - Scenario: Verify logout
+2023-07-27 07:10:34,789 - commons.properties.PropertiesManager -INFO - Constructing PropertiesManager with file path: '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties'
+2023-07-27 07:10:34,789 - commons.properties.PropertiesManager -INFO - Loading properties file
+2023-07-27 07:10:34,789 - commons.properties.PropertiesManager -INFO - Properties file '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties' loaded successfully
+2023-07-27 07:10:34,790 - commons.web.WebDriverManager -INFO - Constructing WebDriverManager with the specified properties manager
+2023-07-27 07:10:34,790 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.wait' as int
+2023-07-27 07:10:34,790 - commons.web.WebDriverManager -INFO - Constructing WebDriverInitializer with the specified properties manager
+2023-07-27 07:10:34,790 - commons.web.WebDriverManager -INFO - Initializing WebDriver
+2023-07-27 07:10:34,790 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.browser.name' as string
+2023-07-27 07:10:34,790 - commons.properties.PropertiesManager -INFO - Returning Property of 'headless' as string
+2023-07-27 07:10:34,790 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.manager' as boolean
+2023-07-27 07:10:34,869 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 115)
+2023-07-27 07:10:34,874 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+2023-07-27 07:10:35,272 - commons.web.WebDriverManager -INFO - Web browser 'chrome' launched successfully
+2023-07-27 07:10:35,274 - commons.properties.PropertiesManager -INFO - Returning Property of 'windows.maximize' as boolean
+2023-07-27 07:10:35,274 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:10:35,385 - org.justtestit.buggy.steps.Hooks -INFO - Browser windows maximized successfully
+2023-07-27 07:10:35,386 - commons.properties.PropertiesManager -INFO - Returning Property of 'implicitly.wait' as int
+2023-07-27 07:10:35,387 - org.justtestit.buggy.steps.Hooks -INFO - Implicit wait not implemented
+2023-07-27 07:10:35,388 - commons.properties.PropertiesManager -INFO - Returning Property of 'page.load.timeout' as int
+2023-07-27 07:10:35,388 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:10:35,393 - org.justtestit.buggy.steps.Hooks -INFO - Page load timeout '60 second(s)' implemented successfully
+2023-07-27 07:10:35,396 - org.justtestit.buggy.steps.LoginSteps -INFO - Given I am at Buggy login page
+2023-07-27 07:10:35,397 - commons.properties.PropertiesManager -INFO - Returning Property of 'base.url' as string
+2023-07-27 07:10:35,397 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:10:36,782 - org.justtestit.buggy.steps.LoginSteps -INFO - When I login Buggy with user: {string} and password: {string}
+2023-07-27 07:10:36,783 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:36,838 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: login
+2023-07-27 07:10:36,922 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:36,959 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: password
+2023-07-27 07:10:37,025 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:37,079 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.cssSelector: button[type='submit']
+2023-07-27 07:10:37,127 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I should reach to user dashboard
+2023-07-27 07:10:37,127 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I should see the relevant user first name: {string}
+2023-07-27 07:10:37,128 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:39,758 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.xpath: //*[contains(text(),'Ricky')]
+2023-07-27 07:10:39,772 - org.justtestit.buggy.steps.LoginSteps -INFO - When I click on Logout
+2023-07-27 07:10:39,772 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:39,813 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.linkText: Logout
+2023-07-27 07:10:39,867 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I should logged out successfully
+2023-07-27 07:10:39,870 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:39,900 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.cssSelector: button[type='submit']
+2023-07-27 07:10:39,915 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:39,935 - org.justtestit.buggy.steps.Hooks -INFO - Skipped capturing screenshot, because webDriverManager is null
+2023-07-27 07:10:39,935 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:10:40,009 - org.justtestit.buggy.steps.Hooks -INFO - Closed web browser window(s) and ended the WebDriver session
+2023-07-27 07:10:40,009 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX END TEST SCENARIO XXXXXXXXXX
+2023-07-27 07:10:40,028 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX START TEST SCENARIO XXXXXXXXXX
+2023-07-27 07:10:40,029 - org.justtestit.buggy.steps.Hooks -INFO - Scenario: Verify invalid login
+2023-07-27 07:10:40,029 - commons.properties.PropertiesManager -INFO - Constructing PropertiesManager with file path: '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties'
+2023-07-27 07:10:40,030 - commons.properties.PropertiesManager -INFO - Loading properties file
+2023-07-27 07:10:40,030 - commons.properties.PropertiesManager -INFO - Properties file '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties' loaded successfully
+2023-07-27 07:10:40,031 - commons.web.WebDriverManager -INFO - Constructing WebDriverManager with the specified properties manager
+2023-07-27 07:10:40,032 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.wait' as int
+2023-07-27 07:10:40,032 - commons.web.WebDriverManager -INFO - Constructing WebDriverInitializer with the specified properties manager
+2023-07-27 07:10:40,033 - commons.web.WebDriverManager -INFO - Initializing WebDriver
+2023-07-27 07:10:40,033 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.browser.name' as string
+2023-07-27 07:10:40,034 - commons.properties.PropertiesManager -INFO - Returning Property of 'headless' as string
+2023-07-27 07:10:40,035 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.manager' as boolean
+2023-07-27 07:10:40,045 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 115)
+2023-07-27 07:10:40,054 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+2023-07-27 07:10:40,463 - commons.web.WebDriverManager -INFO - Web browser 'chrome' launched successfully
+2023-07-27 07:10:40,463 - commons.properties.PropertiesManager -INFO - Returning Property of 'windows.maximize' as boolean
+2023-07-27 07:10:40,463 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:10:40,571 - org.justtestit.buggy.steps.Hooks -INFO - Browser windows maximized successfully
+2023-07-27 07:10:40,571 - commons.properties.PropertiesManager -INFO - Returning Property of 'implicitly.wait' as int
+2023-07-27 07:10:40,574 - org.justtestit.buggy.steps.Hooks -INFO - Implicit wait not implemented
+2023-07-27 07:10:40,574 - commons.properties.PropertiesManager -INFO - Returning Property of 'page.load.timeout' as int
+2023-07-27 07:10:40,575 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:10:40,577 - org.justtestit.buggy.steps.Hooks -INFO - Page load timeout '60 second(s)' implemented successfully
+2023-07-27 07:10:40,583 - org.justtestit.buggy.steps.LoginSteps -INFO - Given I am at Buggy login page
+2023-07-27 07:10:40,584 - commons.properties.PropertiesManager -INFO - Returning Property of 'base.url' as string
+2023-07-27 07:10:40,584 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:10:41,756 - org.justtestit.buggy.steps.LoginSteps -INFO - When I login Buggy with user: {string} and password: {string}
+2023-07-27 07:10:41,756 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:41,807 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: login
+2023-07-27 07:10:41,882 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:41,920 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: password
+2023-07-27 07:10:41,988 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:42,039 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.cssSelector: button[type='submit']
+2023-07-27 07:10:42,082 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I should see error message: {string}
+2023-07-27 07:10:42,082 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:43,146 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.xpath: //*[contains(text(),'Invalid username/password')]
+2023-07-27 07:10:43,165 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I am still on Home page
+2023-07-27 07:10:43,166 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:43,193 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.cssSelector: button[type='submit']
+2023-07-27 07:10:43,207 - org.justtestit.buggy.steps.Hooks -INFO - Skipped capturing screenshot, because webDriverManager is null
+2023-07-27 07:10:43,207 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:10:43,309 - org.justtestit.buggy.steps.Hooks -INFO - Closed web browser window(s) and ended the WebDriver session
+2023-07-27 07:10:43,310 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX END TEST SCENARIO XXXXXXXXXX
+2023-07-27 07:10:43,323 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX START TEST SCENARIO XXXXXXXXXX
+2023-07-27 07:10:43,323 - org.justtestit.buggy.steps.Hooks -INFO - Scenario: Verify invalid login
+2023-07-27 07:10:43,324 - commons.properties.PropertiesManager -INFO - Constructing PropertiesManager with file path: '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties'
+2023-07-27 07:10:43,324 - commons.properties.PropertiesManager -INFO - Loading properties file
+2023-07-27 07:10:43,325 - commons.properties.PropertiesManager -INFO - Properties file '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties' loaded successfully
+2023-07-27 07:10:43,326 - commons.web.WebDriverManager -INFO - Constructing WebDriverManager with the specified properties manager
+2023-07-27 07:10:43,327 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.wait' as int
+2023-07-27 07:10:43,328 - commons.web.WebDriverManager -INFO - Constructing WebDriverInitializer with the specified properties manager
+2023-07-27 07:10:43,328 - commons.web.WebDriverManager -INFO - Initializing WebDriver
+2023-07-27 07:10:43,330 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.browser.name' as string
+2023-07-27 07:10:43,331 - commons.properties.PropertiesManager -INFO - Returning Property of 'headless' as string
+2023-07-27 07:10:43,331 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.manager' as boolean
+2023-07-27 07:10:43,349 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 115)
+2023-07-27 07:10:43,354 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+2023-07-27 07:10:43,711 - commons.web.WebDriverManager -INFO - Web browser 'chrome' launched successfully
+2023-07-27 07:10:43,711 - commons.properties.PropertiesManager -INFO - Returning Property of 'windows.maximize' as boolean
+2023-07-27 07:10:43,712 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:10:43,821 - org.justtestit.buggy.steps.Hooks -INFO - Browser windows maximized successfully
+2023-07-27 07:10:43,821 - commons.properties.PropertiesManager -INFO - Returning Property of 'implicitly.wait' as int
+2023-07-27 07:10:43,821 - org.justtestit.buggy.steps.Hooks -INFO - Implicit wait not implemented
+2023-07-27 07:10:43,821 - commons.properties.PropertiesManager -INFO - Returning Property of 'page.load.timeout' as int
+2023-07-27 07:10:43,821 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:10:43,825 - org.justtestit.buggy.steps.Hooks -INFO - Page load timeout '60 second(s)' implemented successfully
+2023-07-27 07:10:43,826 - org.justtestit.buggy.steps.LoginSteps -INFO - Given I am at Buggy login page
+2023-07-27 07:10:43,826 - commons.properties.PropertiesManager -INFO - Returning Property of 'base.url' as string
+2023-07-27 07:10:43,826 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:10:44,402 - org.justtestit.buggy.steps.LoginSteps -INFO - When I login Buggy with user: {string} and password: {string}
+2023-07-27 07:10:44,403 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:44,455 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: login
+2023-07-27 07:10:44,532 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:44,567 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: password
+2023-07-27 07:10:44,633 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:44,693 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.cssSelector: button[type='submit']
+2023-07-27 07:10:44,734 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I should see error message: {string}
+2023-07-27 07:10:44,734 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:45,804 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.xpath: //*[contains(text(),'Invalid username/password')]
+2023-07-27 07:10:45,817 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I am still on Home page
+2023-07-27 07:10:45,817 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:45,840 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.cssSelector: button[type='submit']
+2023-07-27 07:10:45,854 - org.justtestit.buggy.steps.Hooks -INFO - Skipped capturing screenshot, because webDriverManager is null
+2023-07-27 07:10:45,854 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:10:45,956 - org.justtestit.buggy.steps.Hooks -INFO - Closed web browser window(s) and ended the WebDriver session
+2023-07-27 07:10:45,956 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX END TEST SCENARIO XXXXXXXXXX
+2023-07-27 07:10:45,961 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX START TEST SCENARIO XXXXXXXXXX
+2023-07-27 07:10:45,961 - org.justtestit.buggy.steps.Hooks -INFO - Scenario: Verify invalid login
+2023-07-27 07:10:45,961 - commons.properties.PropertiesManager -INFO - Constructing PropertiesManager with file path: '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties'
+2023-07-27 07:10:45,962 - commons.properties.PropertiesManager -INFO - Loading properties file
+2023-07-27 07:10:45,962 - commons.properties.PropertiesManager -INFO - Properties file '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties' loaded successfully
+2023-07-27 07:10:45,962 - commons.web.WebDriverManager -INFO - Constructing WebDriverManager with the specified properties manager
+2023-07-27 07:10:45,966 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.wait' as int
+2023-07-27 07:10:45,966 - commons.web.WebDriverManager -INFO - Constructing WebDriverInitializer with the specified properties manager
+2023-07-27 07:10:45,966 - commons.web.WebDriverManager -INFO - Initializing WebDriver
+2023-07-27 07:10:45,966 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.browser.name' as string
+2023-07-27 07:10:45,967 - commons.properties.PropertiesManager -INFO - Returning Property of 'headless' as string
+2023-07-27 07:10:45,967 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.manager' as boolean
+2023-07-27 07:10:45,975 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 115)
+2023-07-27 07:10:45,979 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+2023-07-27 07:10:46,335 - commons.web.WebDriverManager -INFO - Web browser 'chrome' launched successfully
+2023-07-27 07:10:46,337 - commons.properties.PropertiesManager -INFO - Returning Property of 'windows.maximize' as boolean
+2023-07-27 07:10:46,337 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:10:46,448 - org.justtestit.buggy.steps.Hooks -INFO - Browser windows maximized successfully
+2023-07-27 07:10:46,448 - commons.properties.PropertiesManager -INFO - Returning Property of 'implicitly.wait' as int
+2023-07-27 07:10:46,448 - org.justtestit.buggy.steps.Hooks -INFO - Implicit wait not implemented
+2023-07-27 07:10:46,448 - commons.properties.PropertiesManager -INFO - Returning Property of 'page.load.timeout' as int
+2023-07-27 07:10:46,449 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:10:46,452 - org.justtestit.buggy.steps.Hooks -INFO - Page load timeout '60 second(s)' implemented successfully
+2023-07-27 07:10:46,452 - org.justtestit.buggy.steps.LoginSteps -INFO - Given I am at Buggy login page
+2023-07-27 07:10:46,452 - commons.properties.PropertiesManager -INFO - Returning Property of 'base.url' as string
+2023-07-27 07:10:46,453 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:10:47,638 - org.justtestit.buggy.steps.LoginSteps -INFO - When I login Buggy with user: {string} and password: {string}
+2023-07-27 07:10:47,638 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:47,693 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: login
+2023-07-27 07:10:47,767 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:47,799 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: password
+2023-07-27 07:10:47,848 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:47,887 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.cssSelector: button[type='submit']
+2023-07-27 07:10:48,048 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I should see error message: {string}
+2023-07-27 07:10:49,049 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I am still on Home page
+2023-07-27 07:10:49,049 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:49,076 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.cssSelector: button[type='submit']
+2023-07-27 07:10:49,091 - org.justtestit.buggy.steps.Hooks -INFO - Skipped capturing screenshot, because webDriverManager is null
+2023-07-27 07:10:49,092 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:10:49,196 - org.justtestit.buggy.steps.Hooks -INFO - Closed web browser window(s) and ended the WebDriver session
+2023-07-27 07:10:49,196 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX END TEST SCENARIO XXXXXXXXXX
+2023-07-27 07:10:49,205 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX START TEST SCENARIO XXXXXXXXXX
+2023-07-27 07:10:49,205 - org.justtestit.buggy.steps.Hooks -INFO - Scenario: Verify invalid login
+2023-07-27 07:10:49,205 - commons.properties.PropertiesManager -INFO - Constructing PropertiesManager with file path: '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties'
+2023-07-27 07:10:49,205 - commons.properties.PropertiesManager -INFO - Loading properties file
+2023-07-27 07:10:49,206 - commons.properties.PropertiesManager -INFO - Properties file '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties' loaded successfully
+2023-07-27 07:10:49,207 - commons.web.WebDriverManager -INFO - Constructing WebDriverManager with the specified properties manager
+2023-07-27 07:10:49,207 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.wait' as int
+2023-07-27 07:10:49,208 - commons.web.WebDriverManager -INFO - Constructing WebDriverInitializer with the specified properties manager
+2023-07-27 07:10:49,209 - commons.web.WebDriverManager -INFO - Initializing WebDriver
+2023-07-27 07:10:49,209 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.browser.name' as string
+2023-07-27 07:10:49,210 - commons.properties.PropertiesManager -INFO - Returning Property of 'headless' as string
+2023-07-27 07:10:49,210 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.manager' as boolean
+2023-07-27 07:10:49,218 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 115)
+2023-07-27 07:10:49,222 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+2023-07-27 07:10:49,602 - commons.web.WebDriverManager -INFO - Web browser 'chrome' launched successfully
+2023-07-27 07:10:49,602 - commons.properties.PropertiesManager -INFO - Returning Property of 'windows.maximize' as boolean
+2023-07-27 07:10:49,602 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:10:49,713 - org.justtestit.buggy.steps.Hooks -INFO - Browser windows maximized successfully
+2023-07-27 07:10:49,713 - commons.properties.PropertiesManager -INFO - Returning Property of 'implicitly.wait' as int
+2023-07-27 07:10:49,714 - org.justtestit.buggy.steps.Hooks -INFO - Implicit wait not implemented
+2023-07-27 07:10:49,714 - commons.properties.PropertiesManager -INFO - Returning Property of 'page.load.timeout' as int
+2023-07-27 07:10:49,714 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:10:49,719 - org.justtestit.buggy.steps.Hooks -INFO - Page load timeout '60 second(s)' implemented successfully
+2023-07-27 07:10:49,720 - org.justtestit.buggy.steps.LoginSteps -INFO - Given I am at Buggy login page
+2023-07-27 07:10:49,720 - commons.properties.PropertiesManager -INFO - Returning Property of 'base.url' as string
+2023-07-27 07:10:49,721 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:10:50,319 - org.justtestit.buggy.steps.LoginSteps -INFO - When I login Buggy with user: {string} and password: {string}
+2023-07-27 07:10:50,320 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:50,373 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: login
+2023-07-27 07:10:50,446 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:50,478 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: password
+2023-07-27 07:10:50,538 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:50,595 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.cssSelector: button[type='submit']
+2023-07-27 07:10:50,640 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I should see error message: {string}
+2023-07-27 07:10:50,641 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:51,700 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.xpath: //*[contains(text(),'Invalid username/password')]
+2023-07-27 07:10:51,716 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I am still on Home page
+2023-07-27 07:10:51,716 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:51,738 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.cssSelector: button[type='submit']
+2023-07-27 07:10:51,753 - org.justtestit.buggy.steps.Hooks -INFO - Skipped capturing screenshot, because webDriverManager is null
+2023-07-27 07:10:51,753 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:10:51,861 - org.justtestit.buggy.steps.Hooks -INFO - Closed web browser window(s) and ended the WebDriver session
+2023-07-27 07:10:51,861 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX END TEST SCENARIO XXXXXXXXXX
+2023-07-27 07:10:51,868 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX START TEST SCENARIO XXXXXXXXXX
+2023-07-27 07:10:51,868 - org.justtestit.buggy.steps.Hooks -INFO - Scenario: Verify invalid login
+2023-07-27 07:10:51,868 - commons.properties.PropertiesManager -INFO - Constructing PropertiesManager with file path: '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties'
+2023-07-27 07:10:51,868 - commons.properties.PropertiesManager -INFO - Loading properties file
+2023-07-27 07:10:51,869 - commons.properties.PropertiesManager -INFO - Properties file '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties' loaded successfully
+2023-07-27 07:10:51,869 - commons.web.WebDriverManager -INFO - Constructing WebDriverManager with the specified properties manager
+2023-07-27 07:10:51,870 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.wait' as int
+2023-07-27 07:10:51,870 - commons.web.WebDriverManager -INFO - Constructing WebDriverInitializer with the specified properties manager
+2023-07-27 07:10:51,870 - commons.web.WebDriverManager -INFO - Initializing WebDriver
+2023-07-27 07:10:51,870 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.browser.name' as string
+2023-07-27 07:10:51,870 - commons.properties.PropertiesManager -INFO - Returning Property of 'headless' as string
+2023-07-27 07:10:51,870 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.manager' as boolean
+2023-07-27 07:10:51,882 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 115)
+2023-07-27 07:10:51,885 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+2023-07-27 07:10:52,238 - commons.web.WebDriverManager -INFO - Web browser 'chrome' launched successfully
+2023-07-27 07:10:52,239 - commons.properties.PropertiesManager -INFO - Returning Property of 'windows.maximize' as boolean
+2023-07-27 07:10:52,240 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:10:52,351 - org.justtestit.buggy.steps.Hooks -INFO - Browser windows maximized successfully
+2023-07-27 07:10:52,352 - commons.properties.PropertiesManager -INFO - Returning Property of 'implicitly.wait' as int
+2023-07-27 07:10:52,352 - org.justtestit.buggy.steps.Hooks -INFO - Implicit wait not implemented
+2023-07-27 07:10:52,352 - commons.properties.PropertiesManager -INFO - Returning Property of 'page.load.timeout' as int
+2023-07-27 07:10:52,352 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:10:52,354 - org.justtestit.buggy.steps.Hooks -INFO - Page load timeout '60 second(s)' implemented successfully
+2023-07-27 07:10:52,355 - org.justtestit.buggy.steps.LoginSteps -INFO - Given I am at Buggy login page
+2023-07-27 07:10:52,355 - commons.properties.PropertiesManager -INFO - Returning Property of 'base.url' as string
+2023-07-27 07:10:52,355 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:10:53,527 - org.justtestit.buggy.steps.LoginSteps -INFO - When I login Buggy with user: {string} and password: {string}
+2023-07-27 07:10:53,528 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:53,575 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: login
+2023-07-27 07:10:53,634 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:53,670 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: password
+2023-07-27 07:10:53,733 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:53,778 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.cssSelector: button[type='submit']
+2023-07-27 07:10:53,831 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I should see error message: {string}
+2023-07-27 07:10:54,832 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I am still on Home page
+2023-07-27 07:10:54,832 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:54,856 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.cssSelector: button[type='submit']
+2023-07-27 07:10:54,871 - org.justtestit.buggy.steps.Hooks -INFO - Skipped capturing screenshot, because webDriverManager is null
+2023-07-27 07:10:54,872 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:10:54,974 - org.justtestit.buggy.steps.Hooks -INFO - Closed web browser window(s) and ended the WebDriver session
+2023-07-27 07:10:54,975 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX END TEST SCENARIO XXXXXXXXXX
+2023-07-27 07:10:54,980 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX START TEST SCENARIO XXXXXXXXXX
+2023-07-27 07:10:54,980 - org.justtestit.buggy.steps.Hooks -INFO - Scenario: Verify invalid login
+2023-07-27 07:10:54,980 - commons.properties.PropertiesManager -INFO - Constructing PropertiesManager with file path: '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties'
+2023-07-27 07:10:54,980 - commons.properties.PropertiesManager -INFO - Loading properties file
+2023-07-27 07:10:54,981 - commons.properties.PropertiesManager -INFO - Properties file '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties' loaded successfully
+2023-07-27 07:10:54,981 - commons.web.WebDriverManager -INFO - Constructing WebDriverManager with the specified properties manager
+2023-07-27 07:10:54,981 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.wait' as int
+2023-07-27 07:10:54,981 - commons.web.WebDriverManager -INFO - Constructing WebDriverInitializer with the specified properties manager
+2023-07-27 07:10:54,981 - commons.web.WebDriverManager -INFO - Initializing WebDriver
+2023-07-27 07:10:54,981 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.browser.name' as string
+2023-07-27 07:10:54,982 - commons.properties.PropertiesManager -INFO - Returning Property of 'headless' as string
+2023-07-27 07:10:54,982 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.manager' as boolean
+2023-07-27 07:10:54,989 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 115)
+2023-07-27 07:10:54,992 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+2023-07-27 07:10:55,347 - commons.web.WebDriverManager -INFO - Web browser 'chrome' launched successfully
+2023-07-27 07:10:55,347 - commons.properties.PropertiesManager -INFO - Returning Property of 'windows.maximize' as boolean
+2023-07-27 07:10:55,348 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:10:55,464 - org.justtestit.buggy.steps.Hooks -INFO - Browser windows maximized successfully
+2023-07-27 07:10:55,464 - commons.properties.PropertiesManager -INFO - Returning Property of 'implicitly.wait' as int
+2023-07-27 07:10:55,464 - org.justtestit.buggy.steps.Hooks -INFO - Implicit wait not implemented
+2023-07-27 07:10:55,464 - commons.properties.PropertiesManager -INFO - Returning Property of 'page.load.timeout' as int
+2023-07-27 07:10:55,464 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:10:55,467 - org.justtestit.buggy.steps.Hooks -INFO - Page load timeout '60 second(s)' implemented successfully
+2023-07-27 07:10:55,468 - org.justtestit.buggy.steps.LoginSteps -INFO - Given I am at Buggy login page
+2023-07-27 07:10:55,468 - commons.properties.PropertiesManager -INFO - Returning Property of 'base.url' as string
+2023-07-27 07:10:55,468 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:10:56,633 - org.justtestit.buggy.steps.LoginSteps -INFO - When I login Buggy with user: {string} and password: {string}
+2023-07-27 07:10:56,633 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:56,688 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: login
+2023-07-27 07:10:56,747 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:56,785 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: password
+2023-07-27 07:10:56,836 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:56,874 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.cssSelector: button[type='submit']
+2023-07-27 07:10:56,942 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I should see error message: {string}
+2023-07-27 07:10:57,943 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I am still on Home page
+2023-07-27 07:10:57,943 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:10:57,975 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.cssSelector: button[type='submit']
+2023-07-27 07:10:57,988 - org.justtestit.buggy.steps.Hooks -INFO - Skipped capturing screenshot, because webDriverManager is null
+2023-07-27 07:10:57,990 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:10:58,093 - org.justtestit.buggy.steps.Hooks -INFO - Closed web browser window(s) and ended the WebDriver session
+2023-07-27 07:10:58,094 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX END TEST SCENARIO XXXXXXXXXX
+2023-07-27 07:10:58,110 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX START TEST SCENARIO XXXXXXXXXX
+2023-07-27 07:10:58,110 - org.justtestit.buggy.steps.Hooks -INFO - Scenario: Verify valid registration
+2023-07-27 07:10:58,111 - commons.properties.PropertiesManager -INFO - Constructing PropertiesManager with file path: '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties'
+2023-07-27 07:10:58,111 - commons.properties.PropertiesManager -INFO - Loading properties file
+2023-07-27 07:10:58,111 - commons.properties.PropertiesManager -INFO - Properties file '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties' loaded successfully
+2023-07-27 07:10:58,111 - commons.web.WebDriverManager -INFO - Constructing WebDriverManager with the specified properties manager
+2023-07-27 07:10:58,111 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.wait' as int
+2023-07-27 07:10:58,111 - commons.web.WebDriverManager -INFO - Constructing WebDriverInitializer with the specified properties manager
+2023-07-27 07:10:58,111 - commons.web.WebDriverManager -INFO - Initializing WebDriver
+2023-07-27 07:10:58,111 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.browser.name' as string
+2023-07-27 07:10:58,111 - commons.properties.PropertiesManager -INFO - Returning Property of 'headless' as string
+2023-07-27 07:10:58,111 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.manager' as boolean
+2023-07-27 07:10:58,121 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 115)
+2023-07-27 07:10:58,124 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+2023-07-27 07:10:58,523 - commons.web.WebDriverManager -INFO - Web browser 'chrome' launched successfully
+2023-07-27 07:10:58,526 - commons.properties.PropertiesManager -INFO - Returning Property of 'windows.maximize' as boolean
+2023-07-27 07:10:58,527 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:10:58,640 - org.justtestit.buggy.steps.Hooks -INFO - Browser windows maximized successfully
+2023-07-27 07:10:58,640 - commons.properties.PropertiesManager -INFO - Returning Property of 'implicitly.wait' as int
+2023-07-27 07:10:58,640 - org.justtestit.buggy.steps.Hooks -INFO - Implicit wait not implemented
+2023-07-27 07:10:58,641 - commons.properties.PropertiesManager -INFO - Returning Property of 'page.load.timeout' as int
+2023-07-27 07:10:58,641 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:10:58,643 - org.justtestit.buggy.steps.Hooks -INFO - Page load timeout '60 second(s)' implemented successfully
+2023-07-27 07:10:58,644 - org.justtestit.buggy.steps.RegisterSteps -INFO - Given I am at Buggy register page
+2023-07-27 07:10:58,644 - commons.properties.PropertiesManager -INFO - Returning Property of 'base.url' as string
+2023-07-27 07:10:58,644 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:11:00,649 - org.justtestit.buggy.steps.RegisterSteps -INFO - When I register with valid data
+2023-07-27 07:11:00,928 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:00,971 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: username
+2023-07-27 07:11:01,065 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:01,109 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: firstName
+2023-07-27 07:11:01,163 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:01,191 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: lastName
+2023-07-27 07:11:01,245 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:01,273 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: password
+2023-07-27 07:11:01,344 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:01,370 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: confirmPassword
+2023-07-27 07:11:01,446 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:01,479 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.xpath: //button[text()='Register']
+2023-07-27 07:11:01,527 - org.justtestit.buggy.steps.RegisterSteps -INFO - Then I should see the notification message: {string}
+2023-07-27 07:11:01,528 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:03,623 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.xpath: //div[contains(text(),'Registration is successful')]
+2023-07-27 07:11:03,636 - org.justtestit.buggy.steps.RegisterSteps -INFO - When I login with registered user
+2023-07-27 07:11:03,636 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:03,665 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: login
+2023-07-27 07:11:03,738 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:03,766 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: password
+2023-07-27 07:11:03,823 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:03,857 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.cssSelector: button[type='submit']
+2023-07-27 07:11:03,898 - org.justtestit.buggy.steps.LoginSteps -INFO - Then I should see the relevant user first name: {string}
+2023-07-27 07:11:03,898 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:06,512 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.xpath: //*[contains(text(),'John')]
+2023-07-27 07:11:06,528 - org.justtestit.buggy.steps.RegisterSteps -INFO - Then I should see the valid user info under user profile page
+2023-07-27 07:11:06,529 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:06,570 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.linkText: Profile
+2023-07-27 07:11:06,676 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:08,252 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: username
+2023-07-27 07:11:08,270 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:08,400 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: firstName
+2023-07-27 07:11:08,417 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:08,442 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: lastName
+2023-07-27 07:11:08,454 - org.justtestit.buggy.steps.Hooks -INFO - Skipped capturing screenshot, because webDriverManager is null
+2023-07-27 07:11:08,455 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:11:08,556 - org.justtestit.buggy.steps.Hooks -INFO - Closed web browser window(s) and ended the WebDriver session
+2023-07-27 07:11:08,556 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX END TEST SCENARIO XXXXXXXXXX
+2023-07-27 07:11:08,564 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX START TEST SCENARIO XXXXXXXXXX
+2023-07-27 07:11:08,564 - org.justtestit.buggy.steps.Hooks -INFO - Scenario: Verify registration with existing user
+2023-07-27 07:11:08,565 - commons.properties.PropertiesManager -INFO - Constructing PropertiesManager with file path: '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties'
+2023-07-27 07:11:08,565 - commons.properties.PropertiesManager -INFO - Loading properties file
+2023-07-27 07:11:08,565 - commons.properties.PropertiesManager -INFO - Properties file '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties' loaded successfully
+2023-07-27 07:11:08,566 - commons.web.WebDriverManager -INFO - Constructing WebDriverManager with the specified properties manager
+2023-07-27 07:11:08,566 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.wait' as int
+2023-07-27 07:11:08,566 - commons.web.WebDriverManager -INFO - Constructing WebDriverInitializer with the specified properties manager
+2023-07-27 07:11:08,566 - commons.web.WebDriverManager -INFO - Initializing WebDriver
+2023-07-27 07:11:08,566 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.browser.name' as string
+2023-07-27 07:11:08,567 - commons.properties.PropertiesManager -INFO - Returning Property of 'headless' as string
+2023-07-27 07:11:08,567 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.manager' as boolean
+2023-07-27 07:11:08,574 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 115)
+2023-07-27 07:11:08,577 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+2023-07-27 07:11:08,924 - commons.web.WebDriverManager -INFO - Web browser 'chrome' launched successfully
+2023-07-27 07:11:08,925 - commons.properties.PropertiesManager -INFO - Returning Property of 'windows.maximize' as boolean
+2023-07-27 07:11:08,925 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:11:09,035 - org.justtestit.buggy.steps.Hooks -INFO - Browser windows maximized successfully
+2023-07-27 07:11:09,036 - commons.properties.PropertiesManager -INFO - Returning Property of 'implicitly.wait' as int
+2023-07-27 07:11:09,036 - org.justtestit.buggy.steps.Hooks -INFO - Implicit wait not implemented
+2023-07-27 07:11:09,037 - commons.properties.PropertiesManager -INFO - Returning Property of 'page.load.timeout' as int
+2023-07-27 07:11:09,037 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:11:09,040 - org.justtestit.buggy.steps.Hooks -INFO - Page load timeout '60 second(s)' implemented successfully
+2023-07-27 07:11:09,040 - org.justtestit.buggy.steps.RegisterSteps -INFO - Given I am at Buggy register page
+2023-07-27 07:11:09,040 - commons.properties.PropertiesManager -INFO - Returning Property of 'base.url' as string
+2023-07-27 07:11:09,040 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:11:10,323 - org.justtestit.buggy.steps.RegisterSteps -INFO - When I try to register with existing user
+2023-07-27 07:11:10,324 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:10,374 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: username
+2023-07-27 07:11:10,465 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:10,516 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: firstName
+2023-07-27 07:11:10,584 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:10,616 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: lastName
+2023-07-27 07:11:10,673 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:10,706 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: password
+2023-07-27 07:11:10,769 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:10,802 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: confirmPassword
+2023-07-27 07:11:10,883 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:10,919 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.xpath: //button[text()='Register']
+2023-07-27 07:11:10,971 - org.justtestit.buggy.steps.RegisterSteps -INFO - Then I should see the error message: {string}
+2023-07-27 07:11:10,971 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:12,554 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.xpath: //div[contains(text(),'User already exists')]
+2023-07-27 07:11:12,567 - org.justtestit.buggy.steps.Hooks -INFO - Skipped capturing screenshot, because webDriverManager is null
+2023-07-27 07:11:12,567 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:11:12,669 - org.justtestit.buggy.steps.Hooks -INFO - Closed web browser window(s) and ended the WebDriver session
+2023-07-27 07:11:12,669 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX END TEST SCENARIO XXXXXXXXXX
+2023-07-27 07:11:12,676 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX START TEST SCENARIO XXXXXXXXXX
+2023-07-27 07:11:12,678 - org.justtestit.buggy.steps.Hooks -INFO - Scenario: Verify registration with existing user
+2023-07-27 07:11:12,679 - commons.properties.PropertiesManager -INFO - Constructing PropertiesManager with file path: '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties'
+2023-07-27 07:11:12,679 - commons.properties.PropertiesManager -INFO - Loading properties file
+2023-07-27 07:11:12,680 - commons.properties.PropertiesManager -INFO - Properties file '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties' loaded successfully
+2023-07-27 07:11:12,681 - commons.web.WebDriverManager -INFO - Constructing WebDriverManager with the specified properties manager
+2023-07-27 07:11:12,681 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.wait' as int
+2023-07-27 07:11:12,682 - commons.web.WebDriverManager -INFO - Constructing WebDriverInitializer with the specified properties manager
+2023-07-27 07:11:12,682 - commons.web.WebDriverManager -INFO - Initializing WebDriver
+2023-07-27 07:11:12,683 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.browser.name' as string
+2023-07-27 07:11:12,683 - commons.properties.PropertiesManager -INFO - Returning Property of 'headless' as string
+2023-07-27 07:11:12,684 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.manager' as boolean
+2023-07-27 07:11:12,692 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 115)
+2023-07-27 07:11:12,695 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+2023-07-27 07:11:13,063 - commons.web.WebDriverManager -INFO - Web browser 'chrome' launched successfully
+2023-07-27 07:11:13,066 - commons.properties.PropertiesManager -INFO - Returning Property of 'windows.maximize' as boolean
+2023-07-27 07:11:13,067 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:11:13,182 - org.justtestit.buggy.steps.Hooks -INFO - Browser windows maximized successfully
+2023-07-27 07:11:13,182 - commons.properties.PropertiesManager -INFO - Returning Property of 'implicitly.wait' as int
+2023-07-27 07:11:13,183 - org.justtestit.buggy.steps.Hooks -INFO - Implicit wait not implemented
+2023-07-27 07:11:13,183 - commons.properties.PropertiesManager -INFO - Returning Property of 'page.load.timeout' as int
+2023-07-27 07:11:13,183 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:11:13,188 - org.justtestit.buggy.steps.Hooks -INFO - Page load timeout '60 second(s)' implemented successfully
+2023-07-27 07:11:13,189 - org.justtestit.buggy.steps.RegisterSteps -INFO - Given I am at Buggy register page
+2023-07-27 07:11:13,189 - commons.properties.PropertiesManager -INFO - Returning Property of 'base.url' as string
+2023-07-27 07:11:13,189 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:11:14,364 - org.justtestit.buggy.steps.RegisterSteps -INFO - When I try to register with existing user
+2023-07-27 07:11:14,364 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:14,421 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: username
+2023-07-27 07:11:14,504 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:14,545 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: firstName
+2023-07-27 07:11:14,607 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:14,638 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: lastName
+2023-07-27 07:11:14,701 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:14,729 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: password
+2023-07-27 07:11:14,794 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:14,819 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: confirmPassword
+2023-07-27 07:11:14,892 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:14,932 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.xpath: //button[text()='Register']
+2023-07-27 07:11:14,983 - org.justtestit.buggy.steps.RegisterSteps -INFO - Then I should see the error message: {string}
+2023-07-27 07:11:14,984 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:16,563 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.xpath: //div[contains(text(),'User already exists')]
+2023-07-27 07:11:16,576 - org.justtestit.buggy.steps.Hooks -INFO - Skipped capturing screenshot, because webDriverManager is null
+2023-07-27 07:11:16,576 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:11:16,682 - org.justtestit.buggy.steps.Hooks -INFO - Closed web browser window(s) and ended the WebDriver session
+2023-07-27 07:11:16,683 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX END TEST SCENARIO XXXXXXXXXX
+2023-07-27 07:11:16,686 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX START TEST SCENARIO XXXXXXXXXX
+2023-07-27 07:11:16,686 - org.justtestit.buggy.steps.Hooks -INFO - Scenario: Verify registration with existing user
+2023-07-27 07:11:16,687 - commons.properties.PropertiesManager -INFO - Constructing PropertiesManager with file path: '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties'
+2023-07-27 07:11:16,687 - commons.properties.PropertiesManager -INFO - Loading properties file
+2023-07-27 07:11:16,687 - commons.properties.PropertiesManager -INFO - Properties file '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties' loaded successfully
+2023-07-27 07:11:16,687 - commons.web.WebDriverManager -INFO - Constructing WebDriverManager with the specified properties manager
+2023-07-27 07:11:16,687 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.wait' as int
+2023-07-27 07:11:16,687 - commons.web.WebDriverManager -INFO - Constructing WebDriverInitializer with the specified properties manager
+2023-07-27 07:11:16,687 - commons.web.WebDriverManager -INFO - Initializing WebDriver
+2023-07-27 07:11:16,687 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.browser.name' as string
+2023-07-27 07:11:16,687 - commons.properties.PropertiesManager -INFO - Returning Property of 'headless' as string
+2023-07-27 07:11:16,687 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.manager' as boolean
+2023-07-27 07:11:16,693 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 115)
+2023-07-27 07:11:16,696 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+2023-07-27 07:11:17,077 - commons.web.WebDriverManager -INFO - Web browser 'chrome' launched successfully
+2023-07-27 07:11:17,081 - commons.properties.PropertiesManager -INFO - Returning Property of 'windows.maximize' as boolean
+2023-07-27 07:11:17,081 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:11:17,194 - org.justtestit.buggy.steps.Hooks -INFO - Browser windows maximized successfully
+2023-07-27 07:11:17,195 - commons.properties.PropertiesManager -INFO - Returning Property of 'implicitly.wait' as int
+2023-07-27 07:11:17,195 - org.justtestit.buggy.steps.Hooks -INFO - Implicit wait not implemented
+2023-07-27 07:11:17,195 - commons.properties.PropertiesManager -INFO - Returning Property of 'page.load.timeout' as int
+2023-07-27 07:11:17,195 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:11:17,197 - org.justtestit.buggy.steps.Hooks -INFO - Page load timeout '60 second(s)' implemented successfully
+2023-07-27 07:11:17,197 - org.justtestit.buggy.steps.RegisterSteps -INFO - Given I am at Buggy register page
+2023-07-27 07:11:17,197 - commons.properties.PropertiesManager -INFO - Returning Property of 'base.url' as string
+2023-07-27 07:11:17,198 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:11:18,362 - org.justtestit.buggy.steps.RegisterSteps -INFO - When I try to register with existing user
+2023-07-27 07:11:18,362 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:18,412 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: username
+2023-07-27 07:11:18,511 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:18,551 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: firstName
+2023-07-27 07:11:18,619 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:18,649 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: lastName
+2023-07-27 07:11:18,705 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:18,731 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: password
+2023-07-27 07:11:18,797 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:18,821 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: confirmPassword
+2023-07-27 07:11:18,883 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:18,917 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.xpath: //button[text()='Register']
+2023-07-27 07:11:18,973 - org.justtestit.buggy.steps.RegisterSteps -INFO - Then I should see the error message: {string}
+2023-07-27 07:11:18,973 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:20,552 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.xpath: //div[contains(text(),'User already exists')]
+2023-07-27 07:11:20,564 - org.justtestit.buggy.steps.Hooks -INFO - Skipped capturing screenshot, because webDriverManager is null
+2023-07-27 07:11:20,564 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:11:20,666 - org.justtestit.buggy.steps.Hooks -INFO - Closed web browser window(s) and ended the WebDriver session
+2023-07-27 07:11:20,667 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX END TEST SCENARIO XXXXXXXXXX
+2023-07-27 07:11:20,672 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX START TEST SCENARIO XXXXXXXXXX
+2023-07-27 07:11:20,672 - org.justtestit.buggy.steps.Hooks -INFO - Scenario: Verify registration with existing user
+2023-07-27 07:11:20,672 - commons.properties.PropertiesManager -INFO - Constructing PropertiesManager with file path: '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties'
+2023-07-27 07:11:20,672 - commons.properties.PropertiesManager -INFO - Loading properties file
+2023-07-27 07:11:20,672 - commons.properties.PropertiesManager -INFO - Properties file '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties' loaded successfully
+2023-07-27 07:11:20,672 - commons.web.WebDriverManager -INFO - Constructing WebDriverManager with the specified properties manager
+2023-07-27 07:11:20,672 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.wait' as int
+2023-07-27 07:11:20,672 - commons.web.WebDriverManager -INFO - Constructing WebDriverInitializer with the specified properties manager
+2023-07-27 07:11:20,672 - commons.web.WebDriverManager -INFO - Initializing WebDriver
+2023-07-27 07:11:20,672 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.browser.name' as string
+2023-07-27 07:11:20,672 - commons.properties.PropertiesManager -INFO - Returning Property of 'headless' as string
+2023-07-27 07:11:20,672 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.manager' as boolean
+2023-07-27 07:11:20,679 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 115)
+2023-07-27 07:11:20,682 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+2023-07-27 07:11:21,033 - commons.web.WebDriverManager -INFO - Web browser 'chrome' launched successfully
+2023-07-27 07:11:21,034 - commons.properties.PropertiesManager -INFO - Returning Property of 'windows.maximize' as boolean
+2023-07-27 07:11:21,034 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:11:21,146 - org.justtestit.buggy.steps.Hooks -INFO - Browser windows maximized successfully
+2023-07-27 07:11:21,146 - commons.properties.PropertiesManager -INFO - Returning Property of 'implicitly.wait' as int
+2023-07-27 07:11:21,146 - org.justtestit.buggy.steps.Hooks -INFO - Implicit wait not implemented
+2023-07-27 07:11:21,146 - commons.properties.PropertiesManager -INFO - Returning Property of 'page.load.timeout' as int
+2023-07-27 07:11:21,147 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:11:21,148 - org.justtestit.buggy.steps.Hooks -INFO - Page load timeout '60 second(s)' implemented successfully
+2023-07-27 07:11:21,150 - org.justtestit.buggy.steps.RegisterSteps -INFO - Given I am at Buggy register page
+2023-07-27 07:11:21,150 - commons.properties.PropertiesManager -INFO - Returning Property of 'base.url' as string
+2023-07-27 07:11:21,151 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:11:21,733 - org.justtestit.buggy.steps.RegisterSteps -INFO - When I try to register with existing user
+2023-07-27 07:11:21,733 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:21,787 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: username
+2023-07-27 07:11:21,866 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:21,913 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: firstName
+2023-07-27 07:11:21,984 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:22,017 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: lastName
+2023-07-27 07:11:22,078 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:22,110 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: password
+2023-07-27 07:11:22,180 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:22,208 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: confirmPassword
+2023-07-27 07:11:22,273 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:22,307 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.xpath: //button[text()='Register']
+2023-07-27 07:11:22,368 - org.justtestit.buggy.steps.RegisterSteps -INFO - Then I should see the error message: {string}
+2023-07-27 07:11:22,368 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:23,943 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.xpath: //div[contains(text(),'User already exists')]
+2023-07-27 07:11:23,956 - org.justtestit.buggy.steps.Hooks -INFO - Skipped capturing screenshot, because webDriverManager is null
+2023-07-27 07:11:23,956 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:11:24,057 - org.justtestit.buggy.steps.Hooks -INFO - Closed web browser window(s) and ended the WebDriver session
+2023-07-27 07:11:24,058 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX END TEST SCENARIO XXXXXXXXXX
+2023-07-27 07:11:24,064 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX START TEST SCENARIO XXXXXXXXXX
+2023-07-27 07:11:24,065 - org.justtestit.buggy.steps.Hooks -INFO - Scenario: Verify registration with existing user
+2023-07-27 07:11:24,066 - commons.properties.PropertiesManager -INFO - Constructing PropertiesManager with file path: '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties'
+2023-07-27 07:11:24,067 - commons.properties.PropertiesManager -INFO - Loading properties file
+2023-07-27 07:11:24,068 - commons.properties.PropertiesManager -INFO - Properties file '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties' loaded successfully
+2023-07-27 07:11:24,068 - commons.web.WebDriverManager -INFO - Constructing WebDriverManager with the specified properties manager
+2023-07-27 07:11:24,069 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.wait' as int
+2023-07-27 07:11:24,069 - commons.web.WebDriverManager -INFO - Constructing WebDriverInitializer with the specified properties manager
+2023-07-27 07:11:24,070 - commons.web.WebDriverManager -INFO - Initializing WebDriver
+2023-07-27 07:11:24,070 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.browser.name' as string
+2023-07-27 07:11:24,071 - commons.properties.PropertiesManager -INFO - Returning Property of 'headless' as string
+2023-07-27 07:11:24,071 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.manager' as boolean
+2023-07-27 07:11:24,078 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 115)
+2023-07-27 07:11:24,082 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+2023-07-27 07:11:24,420 - commons.web.WebDriverManager -INFO - Web browser 'chrome' launched successfully
+2023-07-27 07:11:24,420 - commons.properties.PropertiesManager -INFO - Returning Property of 'windows.maximize' as boolean
+2023-07-27 07:11:24,421 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:11:24,531 - org.justtestit.buggy.steps.Hooks -INFO - Browser windows maximized successfully
+2023-07-27 07:11:24,531 - commons.properties.PropertiesManager -INFO - Returning Property of 'implicitly.wait' as int
+2023-07-27 07:11:24,531 - org.justtestit.buggy.steps.Hooks -INFO - Implicit wait not implemented
+2023-07-27 07:11:24,531 - commons.properties.PropertiesManager -INFO - Returning Property of 'page.load.timeout' as int
+2023-07-27 07:11:24,531 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:11:24,534 - org.justtestit.buggy.steps.Hooks -INFO - Page load timeout '60 second(s)' implemented successfully
+2023-07-27 07:11:24,534 - org.justtestit.buggy.steps.RegisterSteps -INFO - Given I am at Buggy register page
+2023-07-27 07:11:24,535 - commons.properties.PropertiesManager -INFO - Returning Property of 'base.url' as string
+2023-07-27 07:11:24,536 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:11:25,683 - org.justtestit.buggy.steps.RegisterSteps -INFO - When I try to register with existing user
+2023-07-27 07:11:25,683 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:25,726 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: username
+2023-07-27 07:11:25,802 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:25,837 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: firstName
+2023-07-27 07:11:25,890 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:25,917 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: lastName
+2023-07-27 07:11:25,987 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:26,014 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: password
+2023-07-27 07:11:26,073 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:26,102 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: confirmPassword
+2023-07-27 07:11:26,173 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:26,212 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.xpath: //button[text()='Register']
+2023-07-27 07:11:26,263 - org.justtestit.buggy.steps.RegisterSteps -INFO - Then I should see the error message: {string}
+2023-07-27 07:11:26,263 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:27,839 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.xpath: //div[contains(text(),'User already exists')]
+2023-07-27 07:11:27,856 - org.justtestit.buggy.steps.Hooks -INFO - Skipped capturing screenshot, because webDriverManager is null
+2023-07-27 07:11:27,856 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:11:27,957 - org.justtestit.buggy.steps.Hooks -INFO - Closed web browser window(s) and ended the WebDriver session
+2023-07-27 07:11:27,958 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX END TEST SCENARIO XXXXXXXXXX
+2023-07-27 07:11:27,968 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX START TEST SCENARIO XXXXXXXXXX
+2023-07-27 07:11:27,970 - org.justtestit.buggy.steps.Hooks -INFO - Scenario: Verify registration with existing user
+2023-07-27 07:11:27,971 - commons.properties.PropertiesManager -INFO - Constructing PropertiesManager with file path: '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties'
+2023-07-27 07:11:27,971 - commons.properties.PropertiesManager -INFO - Loading properties file
+2023-07-27 07:11:27,971 - commons.properties.PropertiesManager -INFO - Properties file '/home/runner/work/selenium-cucumber-java/selenium-cucumber-java/src/test/resources/config-qa.properties' loaded successfully
+2023-07-27 07:11:27,972 - commons.web.WebDriverManager -INFO - Constructing WebDriverManager with the specified properties manager
+2023-07-27 07:11:27,972 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.wait' as int
+2023-07-27 07:11:27,972 - commons.web.WebDriverManager -INFO - Constructing WebDriverInitializer with the specified properties manager
+2023-07-27 07:11:27,972 - commons.web.WebDriverManager -INFO - Initializing WebDriver
+2023-07-27 07:11:27,972 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.browser.name' as string
+2023-07-27 07:11:27,973 - commons.properties.PropertiesManager -INFO - Returning Property of 'headless' as string
+2023-07-27 07:11:27,973 - commons.properties.PropertiesManager -INFO - Returning Property of 'web.driver.manager' as boolean
+2023-07-27 07:11:27,980 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 115)
+2023-07-27 07:11:27,983 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as /home/runner/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+2023-07-27 07:11:28,367 - commons.web.WebDriverManager -INFO - Web browser 'chrome' launched successfully
+2023-07-27 07:11:28,368 - commons.properties.PropertiesManager -INFO - Returning Property of 'windows.maximize' as boolean
+2023-07-27 07:11:28,368 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:11:28,476 - org.justtestit.buggy.steps.Hooks -INFO - Browser windows maximized successfully
+2023-07-27 07:11:28,476 - commons.properties.PropertiesManager -INFO - Returning Property of 'implicitly.wait' as int
+2023-07-27 07:11:28,476 - org.justtestit.buggy.steps.Hooks -INFO - Implicit wait not implemented
+2023-07-27 07:11:28,476 - commons.properties.PropertiesManager -INFO - Returning Property of 'page.load.timeout' as int
+2023-07-27 07:11:28,476 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:11:28,479 - org.justtestit.buggy.steps.Hooks -INFO - Page load timeout '60 second(s)' implemented successfully
+2023-07-27 07:11:28,480 - org.justtestit.buggy.steps.RegisterSteps -INFO - Given I am at Buggy register page
+2023-07-27 07:11:28,484 - commons.properties.PropertiesManager -INFO - Returning Property of 'base.url' as string
+2023-07-27 07:11:28,485 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:11:29,777 - org.justtestit.buggy.steps.RegisterSteps -INFO - When I try to register with existing user
+2023-07-27 07:11:29,778 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:29,824 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: username
+2023-07-27 07:11:29,920 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:29,955 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.name: firstName
+2023-07-27 07:11:30,031 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:30,066 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: lastName
+2023-07-27 07:11:30,127 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:30,155 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: password
+2023-07-27 07:11:30,217 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:30,243 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.id: confirmPassword
+2023-07-27 07:11:30,315 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:30,346 - commons.web.WebDriverManager -INFO - Waited for visibility and enabled then got WebElement with locator: By.xpath: //button[text()='Register']
+2023-07-27 07:11:30,391 - org.justtestit.buggy.steps.RegisterSteps -INFO - Then I should see the error message: {string}
+2023-07-27 07:11:30,391 - commons.web.WebDriverManager -INFO - Creating WebDriverWait with wait time of 15 second(s)
+2023-07-27 07:11:32,489 - commons.web.WebDriverManager -INFO - Waited for visibility then got WebElement with locator: By.xpath: //div[contains(text(),'User already exists')]
+2023-07-27 07:11:32,503 - org.justtestit.buggy.steps.Hooks -INFO - Skipped capturing screenshot, because webDriverManager is null
+2023-07-27 07:11:32,503 - commons.web.WebDriverManager -INFO - Returning an initialized WebDriver
+2023-07-27 07:11:32,606 - org.justtestit.buggy.steps.Hooks -INFO - Closed web browser window(s) and ended the WebDriver session
+2023-07-27 07:11:32,606 - org.justtestit.buggy.steps.Hooks -INFO - XXXXXXXXXX END TEST SCENARIO XXXXXXXXXX
