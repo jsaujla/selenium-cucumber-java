@@ -17,7 +17,8 @@ import io.cucumber.testng.CucumberOptions;
         tags="@regression",
         plugin = {"pretty",
                 "html:target/cucumber-reports.html",
-                "json:target/cucumber.json"
+                "json:target/cucumber.json",
+                "junit:target/junit-cucumber-results.xml"
         }
 )
 public class TestNgRunner extends AbstractTestNGCucumberTests {
