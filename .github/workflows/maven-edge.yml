@@ -6,7 +6,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Selenium Cucumber Java CI with Maven | Microsoft Edge
+name: CI with Maven | Microsoft Edge
 
 on:
   push:

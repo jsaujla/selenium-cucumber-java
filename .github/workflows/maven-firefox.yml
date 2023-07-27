@@ -6,7 +6,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Selenium Cucumber Java CI with Maven | Mozilla Firefox
+name: CI with Maven | Mozilla Firefox
 
 on:
   push:
