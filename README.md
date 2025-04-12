@@ -18,7 +18,7 @@
 ## Local setup ##
 
 ### Prerequisite for execution ###
-* Java 11 or higher installed
+* Java 17 or higher installed
 * Maven installed
 * JAVA_HOME environment variable configured
 * MAVEN_HOME environment variable configured
@@ -27,7 +27,7 @@
 * Microsoft Edge web browser installed (only if tests need to execute on Edge)
 
 ### Prerequisite for development ###
-* Java 11 or higher installed
+* Java 17 or higher installed
 * Maven installed
 * JAVA_HOME environment variable configured
 * MAVEN_HOME environment variable configured
@@ -41,7 +41,6 @@
 * Maven
 * TestNG
 * Selenium WebDriver
-* Web Driver Manager
 * Cucumber
 
 ### How do I get set up ###
