@@ -1,4 +1,3 @@
-commons/web/WebDriverManager.class
 commons/properties/PropertiesManager.class
+commons/web/WebDriverManager.class
 commons/web/WebDriverInitializer.class
-commons/web/WebDriverConstants.class
