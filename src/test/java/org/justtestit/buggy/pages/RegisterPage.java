@@ -11,10 +11,9 @@ import org.openqa.selenium.By;
  */
 public class RegisterPage {
 
-    //********** OBJECT DECLARATION / INSTANCE VARIABLE **********
     private final WebDriverManager webDriverManager;
 
-    //********** STATIC PAGE LOCATORS **********
+    //********** PAGE LOCATORS **********
     private final By loginTextbox = By.id("username");
     private final By firstNameTextbox = By.name("firstName");
     private final By lastNameTextbox = By.id("lastName");

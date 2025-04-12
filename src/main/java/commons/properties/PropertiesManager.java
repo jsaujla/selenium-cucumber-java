@@ -13,11 +13,7 @@ import java.util.Properties;
  * @author Jaspal Aujla
  */
 public class PropertiesManager {
-
-    //********** LOGGER OBJECT DECLARATION/INITIALIZATION **********
     private static final Logger LOGGER = LoggerFactory.getLogger(PropertiesManager.class);
-
-    //********** OBJECT DECLARATION **********
     private Properties properties;
 
     /**

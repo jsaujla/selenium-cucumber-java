@@ -8,8 +8,6 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.openqa.selenium.safari.SafariDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,16 +22,11 @@ import org.slf4j.LoggerFactory;
  * @author Jaspal Aujla
  */
 public class WebDriverInitializer {
-
-    //********** LOGGER OBJECT DECLARATION/INITIALIZATION **********
-    private static final Logger LOGGER = LoggerFactory.getLogger(WebDriverManager.class);
-
-    //********** OBJECT DECLARATION / INSTANCE VARIABLE **********
+    private static final Logger LOGGER = LoggerFactory.getLogger(WebDriverInitializer.class);
     private final PropertiesManager propertiesManager;
-    private WebDriver driver;
 
     /**
-     * Constructs a new WebDriverInitializer with the specified properties manager.
+     * Constructs a new WebDriverInitializer.
      *
      * @param propertiesManager the properties manager to use for configuring the WebDriver
      */
@@ -49,147 +42,85 @@ public class WebDriverInitializer {
      */
     protected WebDriver initializeWebDriver() {
         LOGGER.info("Initializing WebDriver");
-        String browserNameInConfig = propertiesManager.getProperty("web.browser.name").toLowerCase();
-        String browserName = System.getProperty("browser.name", browserNameInConfig);
+        String browserName = System.getProperty("browser.name", propertiesManager.getProperty("web.browser.name").toLowerCase());
+        String headless = System.getProperty("headless", propertiesManager.getProperty("headless"));
 
-        String headlessInConfig = propertiesManager.getProperty("headless");
-        String headless = System.getProperty("headless", headlessInConfig);
-
-        switch(browserName) {
+        WebDriver driver;
+        switch (browserName) {
             case "chrome":
-                initializeChromeDriver(headless);
+                driver = initializeChromeDriver(headless);
                 break;
             case "firefox":
-                initializeFirefoxDriver(headless);
+                driver = initializeFirefoxDriver(headless);
                 break;
             case "edge":
-                initializeEdgeDriver(headless);
-                break;
-            case "ie":
-            case "internet explorer":
-                initializeIeDriver();
+                driver = initializeEdgeDriver(headless);
                 break;
             case "safari":
-                initializeSafariDriver();
+                driver = initializeSafariDriver();
                 break;
             default:
-                LOGGER.error("Value of 'web.browser' in 'config properties' file should be: chrome, firefox, edge, ie or safari");
-                throw new IllegalArgumentException("Value of 'web.browser' in 'config properties' file should be: chrome, firefox, edge, ie or safari");
+                LOGGER.error("Value of 'web.browser' in 'config properties' file should be: chrome, firefox, edge or safari. Unsupported browser: " + browserName);
+                throw new IllegalArgumentException("Unsupported browser: " + browserName);
         }
+
         LOGGER.info("Web browser '" + browserName + "' launched successfully");
         return driver;
     }
 
     /**
-     * Initializes the ChromeDriver with WebDriverManager or with the local executable.
+     * Initializes the ChromeDriver with ChromeOptions.
      *
      * @param headless Whether to run Chrome in headless mode (true) or not (false)
+     * @return The ChromeDriver instance
      */
-    private void initializeChromeDriver(String headless) {
-        if(propertiesManager.getPropertyAsBoolean("web.driver.manager")) {
-            io.github.bonigarcia.wdm.WebDriverManager.chromedriver().setup();
-        } else {
-            if(System.getProperty("webdriver.chrome.driver") == null) {
-                System.setProperty("webdriver.chrome.driver", WebDriverConstants.CHROME_DRIVER_PATH);
-            }
+    private WebDriver initializeChromeDriver(String headless) {
+        ChromeOptions options = new ChromeOptions();
+        if ("true".equalsIgnoreCase(headless)) {
+            options.addArguments("--headless=new");
         }
-        try {
-            ChromeOptions options = new ChromeOptions();
-            if ("true".equals(headless)) {
-                options.addArguments("--headless=new");
-            }
-            driver = new ChromeDriver(options);
-        } catch (Throwable e) {
-            LOGGER.error("Failed to initialize ChromeDriver", e);
-            throw e;
-        }
+        return new ChromeDriver(options);
     }
 
     /**
-     * Initializes the FirefoxDriver with WebDriverManager or with the local executable.
+     * Initializes the FirefoxDriver with FirefoxOptions.
      *
      * @param headless Whether to run Firefox in headless mode (true) or not (false)
+     * @return The FirefoxDriver instance
      */
-    private void initializeFirefoxDriver(String headless) {
-        if(propertiesManager.getPropertyAsBoolean("web.driver.manager")) {
-            io.github.bonigarcia.wdm.WebDriverManager.firefoxdriver().setup();
-        } else {
-            if(System.getProperty("webdriver.gecko.driver") == null) {
-                System.setProperty("webdriver.gecko.driver", WebDriverConstants.FIREFOX_DRIVER_PATH);
-            }
+    private WebDriver initializeFirefoxDriver(String headless) {
+        FirefoxOptions options = new FirefoxOptions();
+        if ("true".equalsIgnoreCase(headless)) {
+            options.addArguments("-headless");
         }
-        try {
-            FirefoxOptions options = new FirefoxOptions();
-            if ("true".equals(headless)) {
-                options.addArguments("-headless");
-            }
-            driver = new FirefoxDriver(options);
-        } catch (Throwable e) {
-            LOGGER.error("Failed to initialize FirefoxDriver", e);
-            throw e;
-        }
+        return new FirefoxDriver(options);
     }
 
     /**
-     * Initializes the EdgeDriver with WebDriverManager or with the local executable.
+     * Initializes the EdgeDriver with EdgeOptions.
      *
      * @param headless Whether to run Edge in headless mode (true) or not (false)
+     * @return The EdgeDriver instance
      */
-    private void initializeEdgeDriver(String headless) {
-        if(propertiesManager.getPropertyAsBoolean("web.driver.manager")) {
-            io.github.bonigarcia.wdm.WebDriverManager.edgedriver().setup();
-        } else {
-            if(System.getProperty("webdriver.edge.driver") == null) {
-                System.setProperty("webdriver.edge.driver", WebDriverConstants.EDGE_DRIVER_PATH);
-            }
+    private WebDriver initializeEdgeDriver(String headless) {
+        EdgeOptions options = new EdgeOptions();
+        if ("true".equalsIgnoreCase(headless)) {
+            options.addArguments("--headless=new");
         }
-        try {
-            EdgeOptions options = new EdgeOptions();
-            if ("true".equals(headless)) {
-                options.addArguments("--headless=new");
-            }
-            driver = new EdgeDriver(options);
-        } catch (Throwable e) {
-            LOGGER.error("Failed to initialize EdgeDriver", e);
-            throw e;
-        }
+        return new EdgeDriver(options);
     }
 
     /**
-     * Initializes the InternetExplorerDriver with WebDriverManager or with the local executable.
+     * Initializes the SafariDriver.
+     *
+     * @return The SafariDriver instance
      */
-    private void initializeIeDriver() {
-        if(propertiesManager.getPropertyAsBoolean("web.driver.manager")) {
-            io.github.bonigarcia.wdm.WebDriverManager.iedriver().setup();
-        } else {
-            if(System.getProperty("webdriver.ie.driver") == null) {
-                System.setProperty("webdriver.ie.driver", WebDriverConstants.IE_DRIVER_PATH);
-            }
-        }
+    private WebDriver initializeSafariDriver() {
         try {
-            InternetExplorerOptions options = new InternetExplorerOptions();
-            options.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
-            options.setCapability(InternetExplorerDriver.IGNORE_ZOOM_SETTING, true);
-            driver = new InternetExplorerDriver(options);
-        } catch (Throwable e) {
-            LOGGER.error("Failed to initialize InternetExplorerDriver", e);
-            throw e;
-        }
-    }
-
-    /**
-     * Initializes the SafariDriver with WebDriverManager or with the local executable.
-     */
-    private void initializeSafariDriver() {
-        if(propertiesManager.getPropertyAsBoolean("web.driver.manager")) {
-            io.github.bonigarcia.wdm.WebDriverManager.safaridriver().setup();
-        }
-        try {
-            driver = new SafariDriver();
+            return new SafariDriver();
         } catch (Throwable e) {
             LOGGER.error("Failed to initialize SafariDriver", e);
             throw e;
         }
     }
-
 }

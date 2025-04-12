@@ -20,10 +20,7 @@ import java.util.List;
  */
 public class WebDriverManager {
 
-    //********** LOGGER OBJECT DECLARATION/INITIALIZATION **********
     private static final Logger LOGGER = LoggerFactory.getLogger(WebDriverManager.class);
-
-    //********** OBJECT DECLARATION / INSTANCE VARIABLE **********
     private final int webDriverWaitTime;
     private final WebDriver driver;
 

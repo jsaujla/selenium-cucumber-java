@@ -11,10 +11,9 @@ import org.openqa.selenium.By;
  */
 public class HomePage {
 
-    //********** OBJECT DECLARATION / INSTANCE VARIABLE **********
     private final WebDriverManager webDriverManager;
 
-    //********** STATIC PAGE LOCATORS **********
+    //********** PAGE LOCATORS **********
     private final By loginTextbox = By.name("login");
     private final By passwordTextbox = By.name("password");
     private final By loginButton = By.cssSelector("button[type='submit']");

@@ -11,11 +11,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
  * The class uses the WebDriverManager object to interact with the browser and the By class to locate elements on the page.
  */
 public class DashboardPage {
-
-    //********** OBJECT DECLARATION / INSTANCE VARIABLE **********
     private final WebDriverManager webDriverManager;
 
-    //********** STATIC PAGE LOCATORS **********
+    //********** PAGE LOCATORS **********
     private final By logoutLink = By.linkText("Logout");
     private final By profileLink = By.linkText("Profile");
 

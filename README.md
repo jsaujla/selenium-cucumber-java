@@ -66,19 +66,18 @@ mvn clean verify -Dconfig.file=config-qa
 mvn clean verify -Dconfig.file=config-uat
 mvn clean verify -Dconfig.file=config-prod
 ```
-* Execute tests on a specific browser (chrome, firefox, edge, ie, safari):
-  * Note: Additional configuration needs to be done on local system/browser to execute tests on IE and Safari browsers
+* Execute tests on a specific browser (chrome, firefox, edge, safari):
+  * Note: Additional configuration needs to be done on local system/browser to execute tests on Safari browsers
 ```
 mvn clean verify -Dbrowser.name=chrome
 mvn clean verify -Dbrowser.name=firefox
 mvn clean verify -Dbrowser.name=edge
-mvn clean verify -Dbrowser.name=ie
 mvn clean verify -Dbrowser.name=safari
 ```
 * Execute tests with specific tag(s):
 ```
-mvn clean verify -Dcucumber.filter.tags="@smoke"
-mvn clean verify -Dcucumber.filter.tags="@regression"
+mvn clean verify -Dcucumber.filter.tags=@smoke
+mvn clean verify -Dcucumber.filter.tags=@regression
 ```
 * Execute tests in headless mode  (true, false):
   * Default mode is as per configured in config properties file. Currently, it is 'false'
@@ -88,7 +87,7 @@ mvn clean verify -Dheadless=true
 ```
 * Above mvn command parameters can also be used together. For example:
 ```
-mvn clean verify -Dconfig.file=config-qa -Dbrowser.name=chrome -Dcucumber.filter.tags="@smoke"
+mvn clean verify -Dconfig.file=config-qa -Dbrowser.name=chrome -Dcucumber.filter.tags=@smoke
 ```
 
 ### Parallel test execution ###
@@ -102,16 +101,6 @@ mvn clean verify -Dsurefire.suiteXmlFiles=testng-parallel.xml
 * Cucumber default HTML report 'cucumber-reports.html' will be available under directory 'target' after test execution finished
   * The screenshot can be seen within the report 'cucumber-reports.html' just below the failed test scenario 
 * The test execution logs will be available under directory 'target\log' after test execution finished
-
-### Browser driver exe ###
-* By default, WebDriverManager automatically download/handle the driver exe(s) required to execute tests on a specific browser.
-* In case, to handle browser driver exe(s) manually, follow below steps:
-  1. Go to config properties file, set web.driver.manager=false
-  2. Download the compatible browser driver exe(s) and paste under directory/folder 'browser-drivers' within the project 'buggy-automation-testing' by following below naming:
-     * chromedriver.exe
-     * geckodriver.exe
-     * MicrosoftWebDriver.exe
-     * IEDriverServer.exe
 
 ### Project packages/structure ###
 * BDD test scenarios: Refer feature files under directory '\src\test\resources\features'
